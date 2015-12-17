@@ -152,7 +152,14 @@ textarea {
 	[ 3 Header ]
 -------------------------------------------------------------------*/
 header {
-	background: #89BDD3;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0ab9cf+0,71ed98+100 */
+	background: #0ab9cf; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMTAwJSIgeDI9IjEwMCUiIHkyPSIwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMGFiOWNmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzcxZWQ5OCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+	background: -moz-linear-gradient(45deg,  #0ab9cf 0%, #71ed98 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg,  #0ab9cf 0%,#71ed98 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg,  #0ab9cf 0%,#71ed98 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0ab9cf', endColorstr='#71ed98',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
 	padding: 30px 0;
 }
 header h1 {
@@ -162,10 +169,10 @@ header h1 {
 	font-weight: 400;
 	text-transform: uppercase;
 }
-header h1 span { 
+/*header h1 span { 
 	font-family: 'Roboto Condensed', sans-serif;
 	font-weight: 300; 
-}
+}*/
 header span.title {
 	color: #fff;
 	font-size: 16px;
@@ -183,7 +190,11 @@ header span.title {
 /*------------------------------------------------------------------
 	[ 6 Content ]
 -------------------------------------------------------------------*/
-.content-wrapper { padding: 15px 0; }
+.content-wrapper { padding: 30px 0 50px; }
+.section-heading {
+	font-size: 34px;
+	text-transform: uppercase;
+}
 
 /*------------------------------------------------------------------
 	[ 7 Footer ]
