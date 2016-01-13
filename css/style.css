@@ -160,7 +160,7 @@ header {
 	background: -webkit-linear-gradient(45deg,  #0ab9cf 0%,#71ed98 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(45deg,  #0ab9cf 0%,#71ed98 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0ab9cf', endColorstr='#71ed98',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
-	padding: 30px 0;
+	padding: 50px 0;
 }
 header h1 {
 	color: #fff;
