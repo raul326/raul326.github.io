@@ -62,35 +62,6 @@ $('.home-advertiser-list').slick({
 });
 
 
-//Slick Featured Products
-$('.client-testimonial-list').slick({
-	slidesToShow: 1,
-	slidesToScroll: 1,
-	speed: 600,
-	autoplay: true,
-	dots: true,
-	arrows: false,
-	responsive: [
-		{
-			breakpoint: 768,
-			settings: {
-				slidesToShow: 1,
-				slidesToScroll: 1,
-				arrows: false,
-				fade: false,
-				autoplay: true
-			}
-		},
-		{
-			breakpoint: 480,
-			settings: {
-				slidesToShow: 1,
-				slidesToScroll: 1,
-				arrows: false,
-				fade: false,
-				autoplay: true,
-				adaptiveHeight: true
-			}
-		}
-	]
-});
+  $('.grid').masonry({
+    itemSelector: '.grid-item'
+  });
