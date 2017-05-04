@@ -1,4 +1,3 @@
-.test {}
 /*------------------------------------------------------------------
 	[Table of Contents]
 	1.	Fonts
@@ -273,5 +272,6 @@ footer .container p {
 }
 
 .test {
+	width: 100px;
 }
 
