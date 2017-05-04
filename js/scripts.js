@@ -62,6 +62,6 @@ $('.home-advertiser-list').slick({
 });
 
 
-  $('.grid').masonry({
-    itemSelector: '.grid-item'
-  });
+  // $('.grid').masonry({
+  //   itemSelector: '.grid-item'
+  // });
