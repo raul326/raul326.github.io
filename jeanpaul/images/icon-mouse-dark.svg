@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="33px" viewBox="0 0 24 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-mouse-dark</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tracing-Voices-Copy-2" transform="translate(-775.000000, -1979.000000)" fill="#000000" fill-rule="nonzero">
+            <g id="Group-10" transform="translate(-1.000000, 0.000000)">
+                <g id="scroll" transform="translate(685.000000, 1971.000000)">
+                    <g id="icon-mouse-dark" transform="translate(91.000000, 8.000000)">
+                        <path d="M12,0 C5.38307243,0 0,5.29417969 0,11.8013027 L0,21.1990195 C0,27.7061426 5.38307243,33 12,33 C18.6165282,33 24,27.7221914 24,21.2351133 L24,11.8013027 C24,5.29417969 18.6165282,0 12,0 Z M21.7429025,21.2351133 C21.7429025,26.5173047 17.3724885,30.8145879 12,30.8145879 C6.62784428,30.8145879 2.25709753,26.5009336 2.25709753,21.1986973 L2.25709753,11.8013027 C2.25709753,6.49906641 6.62784428,2.18541211 12,2.18541211 C17.3725551,2.18541211 21.7429025,6.49906641 21.7429025,11.8013027 L21.7429025,21.2351133 Z" id="Shape"></path>
+                        <path d="M12,9.24 C11.263576,9.24 10.6666667,9.66977929 10.6666667,10.2000103 L10.6666667,13.5599897 C10.6666667,14.0902207 11.263576,14.52 12,14.52 C12.736424,14.52 13.3333333,14.0902207 13.3333333,13.5599897 L13.3333333,10.2000103 C13.3333333,9.66977929 12.736424,9.24 12,9.24 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
