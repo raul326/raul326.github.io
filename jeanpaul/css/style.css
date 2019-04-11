@@ -189,17 +189,91 @@ textarea {
 	height: auto;
 }
 
-/*.product-item a { display: inline-block; }*/
 .product-img { 
 	display: inline-block;
 	overflow: hidden;
 	text-align: center;
 }
-/*.product-img img {
-	max-height: 346px;
-}*/
 
+/*About Project*/
+.about-project-wrap h1 { 
+	color: #fff; 
+	text-align: center;
+}
+.about-project-wrap {
+	background: url(../images/about-project-img.png) no-repeat center center;
+	background-size: cover;
+	min-height: 780px;
+}
 
+.blockquote-wrap {
+	background: url(../images/quote-left.png) no-repeat top left;
+	padding-left: 10px;
+	padding-top: 15px;
+}
+.blockquote-wrap blockquote {
+	background: url(../images/quote-right.png) no-repeat bottom right;
+	border:0;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	margin:0;
+	padding-bottom: 30px;
+	padding-right: 15px;
+	text-align: center;
+}
+
+.ig-heading {
+	-webkit-border-radius: 8px 8px 0 0;
+	background: #fff;
+	border-radius: 8px 8px 0 0;
+	display: flex;
+	height: 65px;
+	padding:5px 15px 5px 10px;
+}
+.ig-left-info {
+	position: relative;
+	padding-left: 60px;
+}
+.ig-left-info .ig-avatar {
+	position: absolute;
+	width: 46px;
+	height: 46px;
+	left:0;
+	top: 5px;
+}
+.ig-left-info label { 
+	display: block; 
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 22px;
+	margin:0;
+	padding-top: 5px;
+}
+.ig-left-info span {	
+  color: #7c7c7c;
+  font-family: Roboto;
+  font-size: 14px;
+}
+.ig-right-info { 
+	margin-left: auto; 
+	padding-top: 8px;
+}
+.ig-right-info a {
+	height: 38px;
+	line-height: 38px;
+	width: 85px;
+	background: #3897f0;
+	color: #fff;
+	font-family: Roboto;
+	font-size: 16px;
+	font-weight: 500;
+	text-align: center;
+	border-radius: 4px;
+	display: inline-block;
+}
 /*------------------------------------------------------------------
 	[ 6 Footer ]
 -------------------------------------------------------------------*/
