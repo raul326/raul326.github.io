@@ -280,6 +280,76 @@ textarea {
 }
 
 .about-project-wrap .scroller {  bottom: 35px; }
+
+/*Join Movement*/
+.join-movement-wrap {
+	background: url(../images/join-movement.png) no-repeat;
+	min-height: 775px;
+	padding: 60px 40px;
+}
+
+.join-movement-wrap h1 { margin-bottom: 60px; }
+
+.pollution-box {
+	padding: 20px 28px;
+	width: 100%;
+	min-height: 180px;
+	border-radius: 8px;
+}
+.pollution-box h3 {
+	text-align: left;
+	color: #fff;
+	margin-bottom: 20px;
+	font-size: 36px;
+}
+.pollution-box ul {
+	list-style-type: disc;
+	margin-bottom: 0;
+	margin-left: 20px;
+	padding-left: 30px;
+}
+.pollution-box ul li {
+	text-align: left;
+	color: #fff;
+	font-size: 16px;
+	line-height: 24px;
+}
+.pollution-world {
+	background: url(../images/pollusion-bg-1.png) no-repeat center center;
+	background-size: cover;
+}
+.pollution-lebanon {
+	background: url(../images/pollusion-bg-2.png) no-repeat center center;
+	background-size: cover;
+}
+
+.pollution-bot-desc  {
+	padding-top: 40px;
+}
+
+/*Donate*/
+.donate-wrap { 
+	padding: 40px 0 20px; 
+	text-align: center;
+}
+.donate-wrap h3 { 
+	color: #fff; 
+	margin-bottom: 35px;
+}
+.donate-amounts .btn-stroke {
+	color: #495f75;
+	background: #cadcee;
+	border-color: #ffffff;
+	padding: 11px 20px;
+	min-width: initial;
+	height: 60px;
+	line-height: 33px;
+}
+.btn-stroke sup {
+    font-size: 18px;    
+    top: -.7em;
+}
+
 /*------------------------------------------------------------------
 	[ 6 Footer ]
 -------------------------------------------------------------------*/
@@ -325,6 +395,9 @@ textarea {
 	font-size: 30px;
 	text-align: center;
 }
+
+/*Donate*/
+.donate-amounts .btn-stroke { font-size: 32px; }
 
 
 }
