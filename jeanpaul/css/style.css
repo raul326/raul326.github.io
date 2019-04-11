@@ -196,14 +196,14 @@ textarea {
 }
 
 /*About Project*/
-.about-project-wrap h1 { 
-	color: #fff; 
-	text-align: center;
-}
 .about-project-wrap {
 	background: url(../images/about-project-img.png) no-repeat center center;
 	background-size: cover;
 	min-height: 780px;
+}
+.about-project-wrap h1 { 
+	color: #fff; 
+	text-align: center;
 }
 
 .blockquote-wrap {
@@ -274,6 +274,8 @@ textarea {
 	border-radius: 4px;
 	display: inline-block;
 }
+
+.about-project-wrap .scroller {  bottom: 35px; }
 /*------------------------------------------------------------------
 	[ 6 Footer ]
 -------------------------------------------------------------------*/
