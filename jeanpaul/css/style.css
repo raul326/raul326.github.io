@@ -223,7 +223,10 @@ textarea {
 	padding-right: 15px;
 	text-align: center;
 }
-
+.ig-post-wrap {
+    max-width: 360px;
+    display: inline-block;
+}
 .ig-heading {
 	-webkit-border-radius: 8px 8px 0 0;
 	background: #fff;
@@ -235,6 +238,7 @@ textarea {
 .ig-left-info {
 	position: relative;
 	padding-left: 60px;
+	text-align: left;
 }
 .ig-left-info .ig-avatar {
 	position: absolute;
