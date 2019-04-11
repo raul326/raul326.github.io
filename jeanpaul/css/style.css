@@ -177,6 +177,29 @@ textarea {
 	font-weight: 300;	
 }
 
+/*Product*/
+.products-available-wrap {
+	background: #fff;
+	padding:30px 0 0;
+}
+.prod-text { margin-bottom: 35px; }
+.product-item { 
+	text-align: center; 	
+	margin-bottom: 30px; 
+	height: auto;
+}
+
+/*.product-item a { display: inline-block; }*/
+.product-img { 
+	display: inline-block;
+	overflow: hidden;
+	text-align: center;
+}
+/*.product-img img {
+	max-height: 346px;
+}*/
+
+
 /*------------------------------------------------------------------
 	[ 6 Footer ]
 -------------------------------------------------------------------*/
@@ -199,6 +222,31 @@ textarea {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
 
+/*Product*/
+.product-img {display: block;}
+.product-img.h185 { 
+	height: 154px; 
+	overflow: hidden;
+	display: block;
+}
+
+.prod-text-wrap { 
+	height: 290px;
+    overflow: hidden;
+    margin-bottom: 30px; 
+}
+.prod-text { 
+	height: 130px; 
+	padding-top: 15px;
+
+}
+.prod-text h3 { 
+	margin:0; 
+	font-size: 30px;
+	text-align: center;
+}
+
+
 }
 
 
@@ -206,7 +254,19 @@ textarea {
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 
-
+/*Product*/
+.product-img.h185 { 
+	height: 185px; 
+	overflow: hidden;
+}
+.prod-text { 
+	height: 145px; 
+	padding-top: 20px;
+}
+.prod-text h3 {
+    font-size: 38px;
+}
+.prod-text-wrap { height: 355px; }
 
 
 }
