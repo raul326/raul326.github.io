@@ -147,10 +147,17 @@ textarea {
 /*------------------------------------------------------------------
 	[ 4 Banner ]
 -------------------------------------------------------------------*/
+.overlay .fs-vid-background:before,
+.overlay:before {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+29,0.65+100 */
+	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 29%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 29%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 29%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+	opacity: 1;
+}
 
-
-
-
+.image-slider .slides { margin:0; }
 /*------------------------------------------------------------------
 	[ 5 Content ]
 -------------------------------------------------------------------*/
@@ -161,8 +168,8 @@ textarea {
 	font-family: 'Roboto', sans-serif;
 }
 .jp-story-wrap .heading-story {
-	padding: 18px 0 18px 150px;
-	background: url(../images/jp-avatar.png) no-repeat left center;
+	padding-top: 120px;
+	background: url(../images/jp-avatar.png) no-repeat top center;
 	margin-bottom: 25px;
 }
 .jp-story-wrap .heading-story h4 {
@@ -172,10 +179,41 @@ textarea {
 	margin: 0;
 }
 .jp-story-wrap p {
-	font-size: 20px;
+	font-size: 18px;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;	
+	line-height: 32px;
 }
+
+.story-text-wrap {
+	height: 500px;
+	overflow: auto;
+	padding-right: 60px;
+}
+
+.story-text-wrap::-webkit-scrollbar {
+  width: 7px;
+}
+.jp-story-wrap .scroller-dark { padding-top: 30px; }
+
+/* Track */
+.story-text-wrap::-webkit-scrollbar-track {
+  background: #ececec; 
+}
+ 
+/* Handle */
+.story-text-wrap::-webkit-scrollbar-thumb {
+  background: #d8d8d8; 
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  height: 90px;
+}
+
+/* Handle on hover */
+.story-text-wrap::-webkit-scrollbar-thumb:hover {
+  background: #c6c3c3; 
+}
+
 
 /*Product*/
 .products-available-wrap {
@@ -210,6 +248,7 @@ textarea {
 	background: url(../images/quote-left.png) no-repeat top left;
 	padding-left: 10px;
 	padding-top: 15px;
+	margin-bottom: 20px;
 }
 .blockquote-wrap blockquote {
 	background: url(../images/quote-right.png) no-repeat bottom right;
@@ -226,6 +265,7 @@ textarea {
 .ig-post-wrap {
     max-width: 360px;
     display: inline-block;
+    padding-bottom: 20px;
 }
 .ig-heading {
 	-webkit-border-radius: 8px 8px 0 0;
@@ -250,7 +290,7 @@ textarea {
 .ig-left-info label { 
 	display: block; 
 	font-family: 'Roboto', sans-serif;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 400;
 	line-height: 22px;
 	margin:0;
@@ -259,7 +299,7 @@ textarea {
 .ig-left-info span {	
   color: #7c7c7c;
   font-family: Roboto;
-  font-size: 14px;
+  font-size: 12px;
 }
 .ig-right-info { 
 	margin-left: auto; 
@@ -324,7 +364,7 @@ textarea {
 }
 
 .pollution-bot-desc  {
-	padding-top: 20px;
+	padding: 20px 0 30px;
 }
 
 /*Donate*/
@@ -361,6 +401,12 @@ textarea {
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
+.ig-left-info label { 
+	font-size: 18px;
+}
+.ig-left-info span {	
+  font-size: 14px;
+}
 
 }
 
@@ -387,6 +433,12 @@ textarea {
 }
 .btn-stroke sup {    
     top: -.7em;
+}
+
+.jp-story-wrap { padding: 50px 0; }
+.jp-story-wrap .heading-story {
+	padding: 18px 0 18px 140px;
+	background-position: left center;
 }
 
 
@@ -420,6 +472,14 @@ textarea {
 	text-align: center;
 }
 
+/*About Projects*/
+.ig-post-mid { margin-top: 65px; }
+
+/*Join Movement*/
+/*.join-movement-wrap { 
+	background-size: cover; 
+	background-position: top -95px center;
+}*/
 
 /*Donate*/
 .donate-amounts .btn-stroke { font-size: 32px; }
@@ -447,6 +507,10 @@ textarea {
 .prod-text-wrap { height: 355px; }
 
 /*join movement*/
+.join-movement-wrap { 
+	background-size: cover; 
+	background-position: top -95px center;
+}
 .join-movement-wrap { padding-bottom: 480px; }
 .pollution-box h3 { font-size: 36px }
 .pollution-bot-desc { padding-top: 40px; }
