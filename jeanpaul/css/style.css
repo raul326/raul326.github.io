@@ -283,35 +283,35 @@ textarea {
 
 /*Join Movement*/
 .join-movement-wrap {
-	background: url(../images/join-movement.png) no-repeat;
-	min-height: 775px;
-	padding: 60px 40px;
+	background: #fff;
+	padding: 50px 0 0;
+	position: relative;
 }
 
-.join-movement-wrap h1 { margin-bottom: 60px; }
+.join-movement-wrap h1 { margin-bottom: 40px; }
 
 .pollution-box {
-	padding: 20px 28px;
-	width: 100%;
-	min-height: 180px;
 	border-radius: 8px;
+	margin-bottom: 20px;
+	min-height: 180px;
+	padding: 20px;
+	width: 100%;
 }
 .pollution-box h3 {
 	text-align: left;
 	color: #fff;
 	margin-bottom: 20px;
-	font-size: 36px;
+	font-size: 24px;
 }
 .pollution-box ul {
 	list-style-type: disc;
 	margin-bottom: 0;
-	margin-left: 20px;
-	padding-left: 30px;
+	padding-left: 20px;
 }
 .pollution-box ul li {
 	text-align: left;
 	color: #fff;
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 24px;
 }
 .pollution-world {
@@ -324,13 +324,14 @@ textarea {
 }
 
 .pollution-bot-desc  {
-	padding-top: 40px;
+	padding-top: 20px;
 }
 
 /*Donate*/
 .donate-wrap { 
 	padding: 40px 0 20px; 
 	text-align: center;
+	background:#000;
 }
 .donate-wrap h3 { 
 	color: #fff; 
@@ -342,12 +343,13 @@ textarea {
 	border-color: #ffffff;
 	padding: 11px 20px;
 	min-width: initial;
-	height: 60px;
-	line-height: 33px;
+	height: 50px;
+	line-height: 30px;
+	font-size: 20px;
 }
 .btn-stroke sup {
     font-size: 18px;    
-    top: -.7em;
+    top: -.5em;
 }
 
 /*------------------------------------------------------------------
@@ -364,6 +366,28 @@ textarea {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+
+.join-movement-wrap {
+	background: #000 url(../images/join-movement.png) no-repeat top center;
+	min-height: 775px;
+	position: relative;
+	padding-bottom: 440px;
+}
+
+.donate-wrap {
+	position: absolute;
+	bottom:0;
+	left: 0;
+	width: 100%;
+}
+.donate-amounts .btn-stroke {
+	height: 60px;
+	line-height: 33px;
+	font-size: 24px;
+}
+.btn-stroke sup {    
+    top: -.7em;
+}
 
 
 }
@@ -396,6 +420,7 @@ textarea {
 	text-align: center;
 }
 
+
 /*Donate*/
 .donate-amounts .btn-stroke { font-size: 32px; }
 
@@ -420,6 +445,11 @@ textarea {
     font-size: 38px;
 }
 .prod-text-wrap { height: 355px; }
+
+/*join movement*/
+.join-movement-wrap { padding-bottom: 480px; }
+.pollution-box h3 { font-size: 36px }
+.pollution-bot-desc { padding-top: 40px; }
 
 
 }
