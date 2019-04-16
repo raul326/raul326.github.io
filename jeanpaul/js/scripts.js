@@ -532,4 +532,29 @@
     //
 
 
-    
+// $(".prod-text-wrap").clone().appendTo(".prod-text-mobile");   
+// test();
+// $( window ).resize(function() {   
+//     test();
+// });
+
+
+// function test(){
+// let width = $(window).width(); 
+//     if ( width > 992 ) {       
+//         let row1 = $('.switchable');
+//         if(!row1.hasClass('noswitch')) {
+//             row1.addClass('noswitch');
+//             $('.products-available-wrap .container .row:nth-child(2)').after(row1.clone());
+//             row1.remove();
+//         }
+        
+//     } else {
+//         let row2 = $('.switchable');
+//         if(row2.hasClass('noswitch')) {
+//             row2.removeClass('noswitch');
+//             $('.products-available-wrap .container').prepend(row2.clone());
+//             row2.remove();
+//         }
+//     }
+// }

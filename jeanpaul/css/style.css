@@ -226,13 +226,52 @@ textarea {
 	margin-bottom: 30px; 
 	height: auto;
 }
+.product-item a { cursor: pointer; }
 
 .product-img { 
 	display: inline-block;
 	overflow: hidden;
 	text-align: center;
+	position: relative;
+	max-width: 346px;
 }
 
+.addcart-btn {
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	max-width: 100% !important;
+	width: 100%;
+    opacity: 0;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transform: translate3d(0,100px,0);
+    -webkit-transform: translate3d(0,100px,0);
+    -moz-transform: translate3d(0,100px,0);
+}
+
+.product-item a:hover .addcart-btn {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+}
+
+
+.shopify-buy__btn-wrapper { margin-top:0 !important; }
+
+.addcart-btn::before {
+    content: '' attr(data-caption) '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -99;
+    opacity: 1;
+    background-image: linear-gradient(-180deg,rgba(0,0,0,0) 0,#000 100%);
+}
 /*About Project*/
 .about-project-wrap {
 	background: url(../images/about-project-img.png) no-repeat center center;
@@ -461,6 +500,10 @@ textarea {
     overflow: hidden;
     margin-bottom: 30px; 
 }
+.prod-text-wrap .product-img {
+	height: 100%;
+}
+
 .prod-text { 
 	height: 130px; 
 	padding-top: 15px;
@@ -471,6 +514,8 @@ textarea {
 	font-size: 30px;
 	text-align: center;
 }
+
+.prod-text-wrap.visible-xs .addcart-btn { display: none; }
 
 /*About Projects*/
 .ig-post-mid { margin-top: 65px; }
