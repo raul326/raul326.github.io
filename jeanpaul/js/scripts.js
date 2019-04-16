@@ -558,3 +558,61 @@
 //         }
 //     }
 // }
+
+
+    // Image Sliders
+    if($('.slider-all-controls, .slider-paging-controls, .slider-arrow-controls, .slider-thumb-controls, .logo-carousel').length){
+        $('.slider-all-controls').flexslider({
+            start: function(slider){
+                if(slider.find('.slides li:first-child').find('.fs-vid-background video').length){
+                   slider.find('.slides li:first-child').find('.fs-vid-background video').get(0).play();
+                }
+            },
+            after: function(slider){
+                if(slider.find('.fs-vid-background video').length){
+                    if(slider.find('li:not(.flex-active-slide)').find('.fs-vid-background video').length){
+                        slider.find('li:not(.flex-active-slide)').find('.fs-vid-background video').get(0).pause();
+                    }
+                    if(slider.find('.flex-active-slide').find('.fs-vid-background video').length){
+                        slider.find('.flex-active-slide').find('.fs-vid-background video').get(0).play();
+                    }
+                }
+            }
+        });
+        $('.slider-paging-controls').flexslider({
+            animation: "slide",
+            directionNav: false
+        });
+        $('.slider-arrow-controls').flexslider({
+            controlNav: false
+        });
+        $('.slider-thumb-controls .slides li').each(function() {
+            var imgSrc = $(this).find('img').attr('src');
+            $(this).attr('data-thumb', imgSrc);
+        });
+        $('.slider-thumb-controls').flexslider({
+            animation: "slide",
+            controlNav: "thumbnails",
+            directionNav: true,
+            slideshowSpeed: 12000
+        });
+        $('.logo-carousel').flexslider({
+            minItems: 1,
+            maxItems: 4,
+            move: 1,
+            itemWidth: 200,
+            itemMargin: 0,
+            animation: "slide",
+            slideshow: true,
+            slideshowSpeed: 3000,
+            directionNav: false,
+            controlNav: false
+        });
+    }
+
+    // Lightbox gallery titles
+
+    $('.lightbox-grid li a').each(function(){
+        var galleryTitle = $(this).closest('.lightbox-grid').attr('data-gallery-title');
+        $(this).attr('data-lightbox', galleryTitle);
+    });
