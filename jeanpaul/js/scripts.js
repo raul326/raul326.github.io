@@ -1,3 +1,36 @@
+// Smooth scroll to inner links
+        var innerLinks = $('a.inner-link');
+
+        if(innerLinks.length){
+            innerLinks.each(function(){
+                var link = $(this);
+                var href = link.attr('href');
+                if(href.charAt(0) !== "#"){
+                    link.removeClass('inner-link');
+                }
+            });
+
+            var offset = 0;
+            if($('body[data-smooth-scroll-offset]').length){
+                offset = $('body').attr('data-smooth-scroll-offset');
+                offset = offset*1;
+            }
+
+            smoothScroll.init({
+                selector: '.inner-link',
+                selectorHeader: null,
+                speed: 750,
+                easing: 'easeInOutCubic',
+                offset: offset
+            });
+        }
+
+    // Update scroll variable for scrolling functions
+
+    addEventListener('scroll', function() {
+        mr_scrollTop = window.pageYOffset;
+    }, false);
+    
     // Mobile Menu
 
     $('.mobile-toggle').click(function() {
