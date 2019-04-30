@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+body{font-size: 14px; line-height: 1.75; }
+h1,h2,h3,h4,h5,h6, section p, section span, .btn{ font-family: 'Roboto','Raleway',"Helvetica Neue", Helvetica, Arial, sans-serif; }
+input, button, select, textarea{font-family: 'Roboto','Raleway',"Helvetica Neue", Helvetica, Arial, sans-serif;}
+#hero p{ font-size: 15px; color: #fff; line-height: 1.75;}
+.form-check label{font-family: 'Roboto','Raleway',"Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 400; color: #fff;}
+.align-top-right { position: absolute; top: 20px; margin: 0 auto; right: 20px; z-index: 2; }
+#login{ border: 2px solid #2BACE2; background: #2BACE2; height: 50px; line-height: 48px; }
+#login:hover{color: #fff}
+
+.pad{padding: 0 52px;}
+
+/*css add raul*/
+#contact .feature .mailto {
+	font-size: 20px;
+}
+#contact .feature .mailto a { color: #2BACE2; }
+
+@media all and (max-width: 767px) {
+  .pad{padding: 0 0;}
+}
