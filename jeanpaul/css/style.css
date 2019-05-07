@@ -179,7 +179,7 @@ textarea {
 	margin: 0;
 }
 .jp-story-wrap p {
-	font-size: 18px;
+	font-size: 16px;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;	
 	line-height: 32px;
@@ -371,7 +371,10 @@ textarea {
 	position: relative;
 }
 
-.join-movement-wrap h1 { margin-bottom: 40px; }
+.join-movement-wrap h1 { 
+	margin-bottom: 40px; 
+	text-shadow: 0 0 0;
+}
 
 .pollution-box {
 	border-radius: 8px;
