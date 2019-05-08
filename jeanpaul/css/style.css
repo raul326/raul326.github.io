@@ -142,7 +142,18 @@ textarea {
 /*------------------------------------------------------------------
 	[ 3 Header ]
 -------------------------------------------------------------------*/
+nav.fixed.scrolled { position: fixed !important; }
 
+.menu-shop {
+	position: absolute;
+	left: 50%;
+	display: none;
+}
+.nav-container .scrolled .menu-shop { display: block; }
+.menu-shop a { 
+	color: #e2dcd6; 
+}
+.menu-shop a:hover { color: #b3aea8 }
 
 /*------------------------------------------------------------------
 	[ 4 Banner ]
@@ -468,6 +479,8 @@ textarea {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+
+
 
 .join-movement-wrap {
 	background: #000 url(../images/join-movement.png) no-repeat top center;
