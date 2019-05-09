@@ -462,7 +462,93 @@ nav.fixed.scrolled { position: fixed !important; }
 	background-size: cover;
 }
 
+/*Favorite Movements*/
+.f-movements-wrap { padding: 30px 0 50px; }
+.ig-movement-item { 
+	position: relative; 
 
+}
+.ig-movement-item .insta-heading {
+	position: absolute;
+	top: 25px;
+	left: 15px;
+	z-index: 10;
+    width: 100%;
+}
+.insta-heading .left {
+	width: 110px;
+	padding-right: 15px;
+	float: left;
+}
+.insta-heading .right { 
+	float: left;
+    width: 100%;
+    max-width: 165px;
+}
+.insta-heading label {
+	font-size: 18px;
+	color: #fff;
+	margin-top: 8px;
+}
+.insta-heading p { 
+	font-size: 12px; 
+	color: #fff;
+}
+.thumb-list-wrap { 
+	float: left;
+	position: relative; 
+	width: 100%;
+	z-index: 1;
+}
+.thumb-list-wrap .thumb,
+.thumb a { height: 350px; }
+.thumb-list-wrap .thumb { 
+	float: left;
+	
+	background-position: 50% 50% !important;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+}
+.thumb-list-wrap .thumb a {
+	background: rgba(0,0,0,.3);
+}
+.thumb-list-wrap .thumb a:hover { background: rgba(0,0,0,.6)  !important; }
+
+#recyclelebanon .list-one {
+	background: #000 url(../images/insta-movements/recycle-1.jpg);
+}
+#recyclelebanon .list-two {
+	background: #000 url(../images/insta-movements/recycle-2.jpg);
+}
+
+#recycle-beirut .list-one {
+	background: #000 url(../images/insta-movements/recycle-b-1.jpg);
+}
+#recycle-beirut .list-two {
+	background: #000 url(../images/insta-movements/recycle-b-2.jpg);
+}
+#recycle-beirut .list-three {
+	background: #000 url(../images/insta-movements/recycle-b-3.jpg);
+}
+#ouzille .list-one {
+	background: #000 url(../images/insta-movements/ouzille-1.jpg);
+}
+#ouzille .list-two {
+	background: #000 url(../images/insta-movements/ouzille-2.jpg);
+}
+#ouzille .list-three {
+	background: #000 url(../images/insta-movements/ouzille-3.jpg);
+}
+#minutebeachcleanup .list-one {
+	background: #000 url(../images/insta-movements/5minutes-1.jpg);
+}
+#minutebeachcleanup .list-two {
+	background: #000 url(../images/insta-movements/5minutes-2.jpg);
+}
+
+
+
+.thumb-list-wrap .slick-dots { z-index: 1000; }
 /*------------------------------------------------------------------
 	[ 6 Footer ]
 -------------------------------------------------------------------*/
@@ -590,6 +676,10 @@ nav.fixed.scrolled { position: fixed !important; }
 
 
 }
+@media (min-width: 768px) {
+	.thumb-list-wrap .thumb { margin: 0 0 40px }
+	.thumb-list-wrap .slick-dots { bottom: 30px; }
+}
 
 
 
@@ -621,6 +711,23 @@ nav.fixed.scrolled { position: fixed !important; }
 .join-movement-wrap { padding-bottom: 480px; }
 .pollution-box h3 { font-size: 36px }
 .pollution-bot-desc { padding-top: 40px; }
+
+.ig-movement-item .insta-heading {
+	top: 15px;
+	left:0;
+    width: 100%;
+    text-align: center;
+}
+.insta-heading .left {
+	float: none;
+	width: 80px;
+	display: inline-block;
+	padding:0;
+}
+.insta-heading .right { 
+	float: none; 
+	max-width: initial;
+}
 
 
 }
