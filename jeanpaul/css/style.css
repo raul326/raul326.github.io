@@ -147,14 +147,18 @@ nav.fixed.scrolled { position: fixed !important; }
 .menu-shop {
 	position: absolute;
 	left: 50%;
-	display: none;
+/*	display: none;*/
 }
-.nav-container .scrolled .menu-shop { display: block; }
+/*.nav-container .scrolled .menu-shop { display: block; }*/
 .menu-shop a { 
 	color: #e2dcd6; 
 }
 .menu-shop a:hover { color: #b3aea8 }
-
+.menu-shop a span { 
+	display: inline-block; 
+	width: 22px;
+}
+.menu-shop a:hover span { opacity: .8 }
 /*------------------------------------------------------------------
 	[ 4 Banner ]
 -------------------------------------------------------------------*/

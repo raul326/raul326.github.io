@@ -34,8 +34,10 @@
 						<div class="vnu"><img class="logo logo-dark" src="images/TVlogo-white.png"></div>
 					</a>
 				</div>
-				<div class="menu-shop hidden-md">
-					<a class="inner-link" href="#jp-products">Shop</a>
+				<div class="menu-shop hidden-md hidden-lg">
+					<a class="inner-link" href="#jp-products">
+						Shop <span><img src="images/cart-icon.png"></span>
+					</a>
 				</div>
 				<div class="module widget-handle mobile-toggle right visible-sm visible-xs">
 					<i class="ti-menu"></i>
@@ -98,114 +100,271 @@
 		</section><!-- end of slider -->
 		<section id="jp-products" class="products-available-wrap">
 			<div class="container">				
-				<div class="row">
-					<div class="prod-text text-center visible-xs visible-sm hidden-lg">
-						<h3>JP’s <strong>Products</strong> are available <strong>for sale!</strong></h3>
-					</div>
-					<div class="product-item col-md-3">
-						<a href="#">
-							<div class="product-img h185">
-								<!-- <div class="addcart-btn" id='product-component-87a217cbd84'></div> -->
-								<div class="addcart-btn" id='product-component-ab89f527474'></div>
-								<img src="images/prod-1.jpg">
-							</div>
-						</a>
-					</div>
-					<div class="product-item col-md-3">
-						<a href="#">
-							<div class="product-img h185">
-								<div class="addcart-btn" id='product-component-9b18d82b77f'></div>
-								<img src="images/prod-4.jpg">
-							</div>
-						</a>
-					</div>
-					<div class="product-item col-md-3">
-						<a href="#">
-							<div class="product-img h185">
-								<div class="addcart-btn" id='product-component-b6b7290b33b'></div>
-								<img src="images/prod-7.jpg">
-							</div>
-						</a>
-					</div>
-					<div class="product-item col-md-3">
-						<a href="#">
-							<div class="product-img h185">
-								<div class="addcart-btn" id='product-component-2667b88676a'></div>
-								<img src="images/prod-8.jpg">
-							</div>
-						</a>
-					</div>
-				</div>
-				<!-- <div class="prod-text-mobile"></div> -->
-				<div class="row prod-text-wrap">
-					<div class="col-md-3">
-						<div class="product-item">
-							<a href="#">
-								<div class="product-img">
-									<div class="addcart-btn" id='product-component-6b08ad51fa9'></div>
-									<img src="images/prod-2.jpg">
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="prod-text text-center hidden-xs visible-md-block visible-lg-block">
+				<style type="text/css">
+					.products-available-wrap { 
+						position: relative; 
+						padding: 40px 0 30px 0;
+					}
+					.product-list-wrap {
+						position: relative;
+						width: 100%;
+						float: left;
+					}
+					.product-item { float: left; }
+
+
+					.slick-dots {
+						width: 100%;
+						position: absolute;
+						bottom: -15px;
+						z-index: 10;
+						text-align: center;
+						margin: 0;
+					}
+					.slick-dots li {
+						margin: 0 6px;
+						display: inline-block;
+						zoom: 1;
+						*display: inline;
+					}
+					.slick-dots li button {
+						width: 11px;
+						height: 11px;
+						display: block;
+						background: #666;
+						background: rgba(0,0,0,.5);
+						cursor: pointer;
+						text-indent: -9999px;
+						-webkit-box-shadow: inset 0 0 3px rgba(0,0,0,.3);
+						-moz-box-shadow: inset 0 0 3px rgba(0,0,0,.3);
+						-o-box-shadow: inset 0 0 3px rgba(0,0,0,.3);
+						box-shadow: inset 0 0 3px rgba(0,0,0,.3);
+						-webkit-border-radius: 20px;
+						-moz-border-radius: 20px;
+						border-radius: 20px;
+					}
+					.slick-dots li button {
+						background: #666;
+						border: 2px solid #202020;
+						width: 10px;
+						height: 10px;
+					}
+
+					.slick-dots li.slick-active button  {
+						background: #000;
+						background: rgba(0,0,0,.9);
+						cursor: default;
+					}
+					.slick-dots li.slick-active button  {
+						background: #fff;
+					}
+				</style>
+				<div id="show-mobile">
+					<div class="row">
+						<div class="prod-text text-center visible-xs visible-sm hidden-lg">
 							<h3>JP’s <strong>Products</strong> are available <strong>for sale!</strong></h3>
 						</div>
-						<div class="product-item h125 h175">
+						<div class="product-list-wrap">
+							<div class="product-item col-md-3">
+								<a href="#">
+									<div class="product-img h185">
+										<div class="addcart-btn" id='product-component-ab89f527474'></div>
+										<img src="images/prod-1.jpg">
+									</div>
+								</a>
+							</div>
+							<div class="product-item col-md-3">
+								<a href="#">
+									<div class="product-img h185">
+										<div class="addcart-btn" id='product-component-9b18d82b77f'></div>
+										<img src="images/prod-4.jpg">
+									</div>
+								</a>
+							</div>
+							<div class="product-item col-md-3">
+								<a href="#">
+									<div class="product-img h185">
+										<div class="addcart-btn" id='product-component-b6b7290b33b'></div>
+										<img src="images/prod-7.jpg">
+									</div>
+								</a>
+							</div>
+							<div class="product-item col-md-3">
+								<a href="#">
+									<div class="product-img h185">
+										<div class="addcart-btn" id='product-component-2667b88676a'></div>
+										<img src="images/prod-8.jpg">
+									</div>
+								</a>
+							</div>	
+							<!--<div class="product-item col-md-3">
+								<a href="#">
+									<div class="product-img h185">
+										<div class="addcart-btn" id='product-component-6b08ad51fa9'></div>
+										<img src="images/prod-2.jpg">
+									</div>
+								</a>
+							</div> -->
+							<div class="product-item col-md-3">
+								<a href="#">
+									<div class="product-img h185">
+										<div class="addcart-btn" id='product-component-f91db2e45a1'></div>
+										<img src="images/prod-5.jpg">
+									</div>
+								</a>
+							</div>
+							<div class="product-item col-md-6">
+								<a href="#">
+									<div class="product-img h290 h355">
+										<div class="addcart-btn" id='product-component-7458b6f3aff'></div>
+										<img src="images/prod-9.jpg">
+									</div>
+								</a>
+							</div>								
+							<div class="product-item col-md-3">
+								<a href="#">
+									<div class="product-img h185">
+										<div class="addcart-btn" id='product-component-2b23a52bda8'></div>
+										<img src="images/prod-3.jpg">
+									</div>
+								</a>
+							</div>
+							<div class="product-item col-md-3">
+								<a href="#">
+									<div class="product-img h185">
+										<div class="addcart-btn" id='product-component-c7d29a5774a'></div>
+										<img src="images/prod-6.jpg">
+									</div>
+								</a>
+							</div>
+							<div class="product-item col-md-3">
+								<a href="#">
+									<div class="product-img h185">
+										<div class="addcart-btn" id='product-component-05455e0ed22'></div>
+										<img src="images/prod-10.jpg">
+									</div>
+								</a>
+							</div>
+							<div class="product-item col-md-3">
+								<a href="#">
+									<div class="product-img h185">
+										<div class="addcart-btn" id='product-component-b7d445f0842'></div>
+										<img src="images/prod-11.jpg">
+									</div>
+								</a>
+							</div> 			
+						</div>
+					</div>				
+				</div>				
+
+				<div id="del-mobile">
+					<div class="row">
+						<!--<div class="prod-text text-center">
+							<h3>JP’s <strong>Products</strong> are available <strong>for sale!</strong></h3>
+						</div> -->
+						<div class="product-item col-md-3">
 							<a href="#">
-								<div class="product-img">
-									<div class="addcart-btn" id='product-component-f91db2e45a1'></div>
-									<img src="images/prod-5.jpg">
+								<div class="product-img h185">
+									<div class="addcart-btn" id='product-component-ab89f527474'></div>
+									<img src="images/prod-1.jpg">
+								</div>
+							</a>
+						</div>
+						<div class="product-item col-md-3">
+							<a href="#">
+								<div class="product-img h185">
+									<div class="addcart-btn" id='product-component-9b18d82b77f'></div>
+									<img src="images/prod-4.jpg">
+								</div>
+							</a>
+						</div>
+						<div class="product-item col-md-3">
+							<a href="#">
+								<div class="product-img h185">
+									<div class="addcart-btn" id='product-component-b6b7290b33b'></div>
+									<img src="images/prod-7.jpg">
+								</div>
+							</a>
+						</div>
+						<div class="product-item col-md-3">
+							<a href="#">
+								<div class="product-img h185">
+									<div class="addcart-btn" id='product-component-2667b88676a'></div>
+									<img src="images/prod-8.jpg">
 								</div>
 							</a>
 						</div>
 					</div>
-					<div class="col-md-6">
-						<div class="product-item">
+ 					<div class="row prod-text-wrap">
+						<div class="col-md-3">
+							<div class="product-item">
+								<a href="#">
+									<div class="product-img">
+										<div class="addcart-btn" id='product-component-6b08ad51fa9'></div>
+										<img src="images/prod-2.jpg">
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="prod-text text-center hidden-xs visible-md-block visible-lg-block">
+								<h3>JP’s <strong>Products</strong> are available <strong>for sale!</strong></h3>
+							</div>
+							<div class="product-item h125 h175">
+								<a href="#">
+									<div class="product-img">
+										<div class="addcart-btn" id='product-component-f91db2e45a1'></div>
+										<img src="images/prod-5.jpg">
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="product-item">
+								<a href="#">
+									<div class="product-img h290 h355">
+										<div class="addcart-btn" id='product-component-7458b6f3aff'></div>
+										<img src="images/prod-9.jpg">
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>  
+	 				<div class="row">
+						<div class="product-item col-md-3">
 							<a href="#">
-								<div class="product-img h290 h355">
-									<div class="addcart-btn" id='product-component-7458b6f3aff'></div>
-									<img src="images/prod-9.jpg">
+								<div class="product-img h185">
+									<div class="addcart-btn" id='product-component-2b23a52bda8'></div>
+									<img src="images/prod-3.jpg">
 								</div>
 							</a>
 						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="product-item col-md-3">
-						<a href="#">
-							<div class="product-img h185">
-								<div class="addcart-btn" id='product-component-2b23a52bda8'></div>
-								<img src="images/prod-3.jpg">
-							</div>
-						</a>
-					</div>
-					<div class="product-item col-md-3">
-						<a href="#">
-							<div class="product-img h185">
-								<div class="addcart-btn" id='product-component-c7d29a5774a'></div>
-								<img src="images/prod-6.jpg">
-							</div>
-						</a>
-					</div>
-					<div class="product-item col-md-3">
-						<a href="#">
-							<div class="product-img h185">
-								<div class="addcart-btn" id='product-component-05455e0ed22'></div>
-								<img src="images/prod-10.jpg">
-							</div>
-						</a>
-					</div>
-					<div class="product-item col-md-3">
-						<a href="#">
-							<div class="product-img h185">
-								<div class="addcart-btn" id='product-component-b7d445f0842'></div>
-								<img src="images/prod-11.jpg">
-							</div>
-						</a>
-					</div>
-				</div>
+						<div class="product-item col-md-3">
+							<a href="#">
+								<div class="product-img h185">
+									<div class="addcart-btn" id='product-component-c7d29a5774a'></div>
+									<img src="images/prod-6.jpg">
+								</div>
+							</a>
+						</div>
+						<div class="product-item col-md-3">
+							<a href="#">
+								<div class="product-img h185">
+									<div class="addcart-btn" id='product-component-05455e0ed22'></div>
+									<img src="images/prod-10.jpg">
+								</div>
+							</a>
+						</div>
+						<div class="product-item col-md-3">
+							<a href="#">
+								<div class="product-img h185">
+									<div class="addcart-btn" id='product-component-b7d445f0842'></div>
+									<img src="images/prod-11.jpg">
+								</div>
+							</a>
+						</div>
+					</div> 
+				</div> 
 			</div>
 		</section><!-- end of products-available-wrap -->
 		<section class="bg-primary ptb48" id="about-snippet">
@@ -484,5 +643,63 @@
 	<script src="js/yt-lazyload.js"></script>
 	<script src="js/smooth-scroll.min.js"></script>
 	<script src="js/scripts.js"></script>
+
+		<script>
+			$( window ).resize(function() {
+				//console.log(screen.width);
+			});
+
+		$(document).ready(function(){
+			$('.product-list-wrap').slick({
+				arrows: false,
+				dots: true,
+				infinite: true,
+				autoplay: true,
+				fade: true,
+				slidesToShow: 1
+			});
+
+		//$('#del-mobile').remove();	
+
+		// $('#del').show();
+
+		var d = $('#del-mobile');
+		var m = $('#show-mobile');
+
+		function checkWidth() {
+			var windowWidth = $(window).width();
+			if (windowWidth <= 992) {
+
+				$('#show-mobile').addClass('show');
+				$('.hide-m.replace').replaceWith(m);
+			    $('#del-mobile').replaceWith('<div class="hide-d replace"></div>');
+			    //$('#show-mobile').show();
+
+			} else {
+
+				$('#del-mobile').addClass('show');
+				$('.hide-d.replace').replaceWith(d);
+				$('#show-mobile').replaceWith('<div class="hide-m replace"></div>');
+			    //$('#del-mobile').show();
+			    //$('#show-mobile').remove();		
+
+			}		
+		}
+
+		// function checkWidth() {
+		// 	var windowWidth = $(window).width();
+		// 	if (windowWidth <= 992) {
+		// 	    $('#show-mobile').show();
+		// 	} else {
+		// 	    $('#show-mobile').remove();
+		// 	}
+		// }
+		checkWidth();
+
+		$(window).resize(checkWidth);
+
+
+		});
+	</script>
   </body>
 </html>
