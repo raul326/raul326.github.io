@@ -728,6 +728,7 @@ nav.fixed.scrolled { position: fixed !important; }
 	float: none; 
 	max-width: initial;
 }
+.thumb-list-wrap .thumb { margin-bottom: 15px; }
 
 
 }
