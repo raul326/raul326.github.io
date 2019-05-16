@@ -684,6 +684,8 @@ nav.fixed.scrolled { position: fixed !important; }
 
 
 .thumb-list-wrap .slick-dots { z-index: 1000; }
+
+.has-bottom-bar { padding-bottom: 70px; }
 /*------------------------------------------------------------------
 	[ 6 Footer ]
 -------------------------------------------------------------------*/
@@ -809,8 +811,12 @@ nav.fixed.scrolled { position: fixed !important; }
 /*Donate*/
 .donate-amounts .btn-stroke { font-size: 32px; }
 
+/*Footer*/
+.has-bottom-bar { padding-bottom: 0px; }
 
 }
+
+
 @media (min-width: 768px) {
 	.thumb-list-wrap .thumb { margin: 0 0 40px }
 	.thumb-list-wrap .slick-dots { bottom: 30px; }
@@ -872,5 +878,7 @@ nav.fixed.scrolled { position: fixed !important; }
 .story-text-wrap {
 	padding-right: 20px;
 }
+
+
 
 }
