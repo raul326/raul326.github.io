@@ -146,7 +146,8 @@ nav.fixed.scrolled { position: fixed !important; }
 
 .menu-shop {
 	position: absolute;
-	left: 50%;
+	right: 55px;
+	top: -10px;
 /*	display: none;*/
 }
 /*.nav-container .scrolled .menu-shop { display: block; }*/
@@ -159,15 +160,140 @@ nav.fixed.scrolled { position: fixed !important; }
 	width: 22px;
 }
 .menu-shop a:hover span { opacity: .8 }
+
+.menu-donate {
+	position: absolute;
+	right: 100px;
+	top: -10px;
+}
+.scrolled .menu-shop,
+.scrolled .menu-donate {
+	top:0;
+}
+
+
+.menu-shop-2 {
+	position: absolute;
+	right: 62px;
+	top: 22px;
+	line-height: normal;
+	text-align: center;
+/*	display: none;*/
+}
+/*.nav-container .scrolled .menu-shop { display: block; }*/
+.menu-shop-2 a { 
+	color: #F7C7D3; 
+	font-size: 11px;
+	text-align: center;
+	height: initial;
+}
+.menu-shop-2 a:hover { color: #b3aea8 }
+.menu-shop-2 a span { 
+	display: inline-block; 
+	width: 22px;
+}
+.menu-shop-2 a img,
+.menu-donate-2 a img { 
+	margin-bottom: 1px; 
+	display: inline-block;
+}
+.menu-shop-2 a small,
+.menu-donate-2 a small { 
+	display: block; 
+	font-size: 11px;
+	color: #F7C7D3;
+	font-weight: normal;
+}
+.menu-shop-2 a:hover span,
+.menu-donate-2 a:hover span { opacity: .8 }
+
+.menu-donate-2 {
+	position: absolute;
+	right: 111px;
+	top: 21px;
+	line-height: normal;
+	text-align: center;
+}
+.menu-donate-2 a { height: initial; }
+
+.scrolled .menu-shop-2,
+.scrolled .menu-donate-2 {
+	top:12px;
+}
+.menu-donate-2 a img { margin-bottom: 2px;}
+
+
+.module.widget-handle.m-widget-2 {
+	line-height: initial;
+	min-height: initial;
+	text-align: center;
+	top: 20px;
+}
+.module.widget-handle.m-widget-2 i { 
+	color: #F7C7D3 !important;	
+	line-height: initial;
+}
+.module.widget-handle.m-widget-2 span {     
+	display: block;
+    font-size: 11px;
+    color: #F7C7D3; 
+}
+.mobile-toggle.m-widget-2 i { line-height: initial !important;  }
+
+.scrolled .module.widget-handle.m-widget-2 { top: 10px; }
+
+
+.donate-shop-bot {
+	background: #fff;
+	position: fixed;
+	width: 100%;
+	bottom:0;
+	left: 0;
+	padding: 10px;
+	right: 0;
+	z-index: 1030;
+}
+.donate-shop-bot .bottom-donate,
+.donate-shop-bot .bottom-shop { 
+	width: 49%;
+	display: inline-block;
+	text-align: center;
+	line-height: 30px;
+}
+
+.donate-shop-bot a {
+	color: #da9baa;
+	font-size: 15px;	
+	font-weight: 600;
+}
+
+.donate-shop-bot .bottom-donate { 
+	padding-right: 20px;
+	border-right: 1px solid #d8d8d8;
+}
+.donate-shop-bot a span {
+	font-weight: 500;
+}
+/*.donate-shop-bot .bottom-donate img { 
+	margin-left: 10px; 
+}
+.donate-shop-bot .bottom-shop { 
+	padding-left: 20px;
+}*/
+.donate-shop-bot .bottom-shop img,
+.donate-shop-bot .bottom-donate img { 
+	margin-right: 10px; 
+}
+
 /*------------------------------------------------------------------
 	[ 4 Banner ]
 -------------------------------------------------------------------*/
 .overlay .fs-vid-background:before,
 .overlay:before {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+29,0.65+100 */
-	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 29%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 29%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 29%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background: -moz-linear-gradient(top, rgba(0,0,0,.2) 0%, rgba(0,0,0,.1) 29%, rgba(0,0,0,0.75) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(0,0,0,.2) 0%,rgba(0,0,0,.1) 29%,rgba(0,0,0,0.75) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(0,0,0,.2) 0%,rgba(0,0,0,.1) 29%,rgba(0,0,0,0.75) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
 	opacity: 1;
 }
@@ -203,7 +329,7 @@ nav.fixed.scrolled { position: fixed !important; }
 .story-text-wrap {
 	height: 500px;
 	overflow: auto;
-	padding-right: 60px;
+	padding-right: 10px;
 }
 
 .story-text-wrap::-webkit-scrollbar {
@@ -425,7 +551,7 @@ nav.fixed.scrolled { position: fixed !important; }
 }
 
 .pollution-bot-desc  {
-	padding: 20px 0 30px;
+	padding: 0 0 30px;
 }
 
 /*Donate*/
@@ -436,7 +562,12 @@ nav.fixed.scrolled { position: fixed !important; }
 }
 .donate-wrap h3 { 
 	color: #fff; 
-	margin-bottom: 35px;
+	margin-bottom: 20px;
+}
+.donate-wrap p {
+	color: #fff;
+	font-size: 14px;
+	margin-bottom: 25px;
 }
 .donate-amounts .btn-stroke {
 	color: #495f75;
@@ -447,6 +578,8 @@ nav.fixed.scrolled { position: fixed !important; }
 	height: 50px;
 	line-height: 30px;
 	font-size: 20px;
+	pointer-events: none;
+	cursor: default;
 }
 .btn-stroke sup {
     font-size: 18px;    
@@ -710,7 +843,7 @@ nav.fixed.scrolled { position: fixed !important; }
 }
 .join-movement-wrap { padding-bottom: 480px; }
 .pollution-box h3 { font-size: 36px }
-.pollution-bot-desc { padding-top: 40px; }
+.pollution-bot-desc { padding-top: 10px; }
 
 .ig-movement-item .insta-heading {
 	top: 15px;
@@ -730,5 +863,12 @@ nav.fixed.scrolled { position: fixed !important; }
 }
 .thumb-list-wrap .thumb { margin-bottom: 15px; }
 
+.thumb-list-wrap .slick-dots {
+    bottom: 15px;
+}
+
+.story-text-wrap {
+	padding-right: 20px;
+}
 
 }
