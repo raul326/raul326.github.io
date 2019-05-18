@@ -702,6 +702,10 @@
 		// 	}
 		// }
 
+		checkWidth();
+
+		$(window).resize(checkWidth);
+
 		function checkWidth() {
 			var windowWidth = $(window).width();
 			if (windowWidth > 992) {
@@ -709,9 +713,7 @@
 			}
 		}
 
-		checkWidth();
-
-		$(window).resize(checkWidth);
+		
 
 
 
