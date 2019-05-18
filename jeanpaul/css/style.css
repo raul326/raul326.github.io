@@ -428,7 +428,7 @@ nav.fixed.scrolled { position: fixed !important; }
 .product-list-wrap .product-img { height: 231px; }
 .product-list-wrap .slick-dots {
 	bottom: 25px;
-	z-index: 999;
+	z-index: 990;
 }
 
 
