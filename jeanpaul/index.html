@@ -656,94 +656,75 @@
 	<script src="js/smooth-scroll.min.js"></script>
 	<script src="js/scripts.js"></script>
 
-		<script>
-			$( window ).resize(function() {
-				//console.log(screen.width);
-			});
+	<script>
 
-			$(document).ready(function(){
-				$('.product-list-wrap').slick({
-					arrows: false,
-					dots: true,
-					infinite: true,
-					autoplay: true,
-					fade: true,
-					adaptiveHeight: true,
-					slidesToShow: 1
-				});
 
-				
-			//$('#del-mobile').remove();	
+		$('.product-list-wrap').slick({
+			arrows: false,
+			dots: true,
+			infinite: true,
+			autoplay: true,
+			fade: true,
+			adaptiveHeight: true,
+			slidesToShow: 1
+		});
 
-			// $('#del').show();
+		$('.story-text-wrap').slick({
+			arrows: false,
+			dots: true,
+			infinite: false,
+			autoplay: false,
+			fade: false,
+			slidesToShow: 1
+		});
 
-			var d = $('#del-mobile');
-			var m = $('#show-mobile');
+		$('.thumb-list-wrap').slick({
+			arrows: false,
+			dots: true,
+			infinite: true,
+			autoplay: true,
+			fade: true,
+			slidesToShow: 1
+		});
 
-			function checkWidth() {
-				var windowWidth = $(window).width();
-				if (windowWidth <= 992) {
 
-					$('#show-mobile').addClass('show');
-					$('.hide-m.replace').replaceWith(m);
-				    $('#del-mobile').replaceWith('<div class="hide-d replace"></div>');
-				    //$('#show-mobile').show();
+		$(document).ready(function(){
 
-				} else {
+		var d = $('#del-mobile');
+		var m = $('#show-mobile');
 
-					$('#del-mobile').addClass('show');
-					$('.hide-d.replace').replaceWith(d);
-					$('#show-mobile').replaceWith('<div class="hide-m replace"></div>');
-				    //$('#del-mobile').show();
-				    //$('#show-mobile').remove();		
+		function checkWidth() {
+			var windowWidth = $(window).width();
+			if (windowWidth <= 992) {
 
-				}
+				$('#show-mobile').addClass('show');
+				$('.hide-m.replace').replaceWith(m);
+			    $('#del-mobile').replaceWith('<div class="hide-d replace"></div>');
+			    //$('#show-mobile').show();
+
+			} else {
+
+				$('#del-mobile').addClass('show');
+				$('.hide-d.replace').replaceWith(d);
+				$('#show-mobile').replaceWith('<div class="hide-m replace"></div>');	
 
 			}
 
-			// function checkWidth() {
-			// 	var windowWidth = $(window).width();
-			// 	if (windowWidth <= 992) {
-			// 	    $('#show-mobile').show();
-			// 	} else {
-			// 	    $('#show-mobile').remove();
-			// 	}
-			// }
-
-			
-
-			$('.story-text-wrap').slick({
-				arrows: false,
-				dots: true,
-				infinite: false,
-				autoplay: false,
-				fade: false,
-				slidesToShow: 1
-			});
+		}		
 
 
-			checkWidth();
+		checkWidth();
 
-			$(window).resize(checkWidth);
+		$(window).resize(checkWidth);
 
-			function checkWidth() {
-				var windowWidth = $(window).width();
-				if (windowWidth > 992) {
-					$('.product-list-wrap').slick('unslick');						
-					$('.story-text-wrap').slick('unslick');		
-				}
-			}	
+		function checkWidth() {
+			var windowWidth = $(window).width();
+			if (windowWidth > 992) {
+				$('.product-list-wrap').slick('unslick');						
+				$('.story-text-wrap').slick('unslick');		
+			}
+		}	
 
-
-			$('.thumb-list-wrap').slick({
-				arrows: false,
-				dots: true,
-				infinite: true,
-				autoplay: true,
-				fade: true,
-				slidesToShow: 1
-			});
-	
 
 		});
 	</script>
