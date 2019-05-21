@@ -710,6 +710,18 @@
 			// 	}
 			// }
 
+			
+
+			$('.story-text-wrap').slick({
+				arrows: false,
+				dots: true,
+				infinite: false,
+				autoplay: false,
+				fade: false,
+				slidesToShow: 1
+			});
+
+
 			checkWidth();
 
 			$(window).resize(checkWidth);
@@ -717,7 +729,8 @@
 			function checkWidth() {
 				var windowWidth = $(window).width();
 				if (windowWidth > 992) {
-					$('.product-list-wrap').slick('unslick');		
+					$('.product-list-wrap').slick('unslick');						
+					$('.story-text-wrap').slick('unslick');		
 				}
 			}	
 
@@ -730,22 +743,7 @@
 				fade: true,
 				slidesToShow: 1
 			});
-
-			$('.story-text-wrap').slick({
-				arrows: false,
-				dots: true,
-				infinite: false,
-				autoplay: false,
-				fade: false,
-				slidesToShow: 1
-			});
-
-			function checkWidth() {
-				var windowWidth = $(window).width();
-				if (windowWidth > 992) {
-					$('.story-text-wrap').slick('unslick');		
-				}
-			}
+	
 
 		});
 	</script>
