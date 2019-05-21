@@ -78,9 +78,10 @@
 		<section class="cover fullscreen image-slider slider-all-controls">
 			<ul class="slides">
 				<li class="image-bg overlay flex-active-slide" id="vid-id" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2;">
-					<div class="background-image-holder fadeIn" style="background: url(images/jp-hero-img-1.png);">
-						<img class="background-image" alt="Background Image" src="images/jp-hero-img-1.png" style="display: none;" draggable="false">
-					</div>
+
+                	<div class="background-image-holder">
+                  		<img class="background-image" alt="Background Image" src="images/jp-hero-img-1.jpg">
+                  	</div>
 <!-- 					<div class="fs-vid-background">
 						<video muted="" loop="" poster="images/home-covers/6.1.jpg">
 							<source src="images/JP-video-short.webm#t=87,115" type="video/webm"/>
@@ -370,19 +371,26 @@
 							<h4>Jean - Paul Fares: <br/> A Man with a Creative Mission</h4>
 						</div>
 						<div class="story-text-wrap">
-							<p>
-								Lebanon, a country once known for its beautiful beaches and blue waters is now awash in plastic. The shameful evidence of humanity’s “plastic footprint” is prevalent and incontrovertible; for years the Mediterranean Sea has been choked with garbage as part of Lebanon’s long-running waste crisis. The government’s negligence and the legal system’s failure in employing detailed policies on environmental protection has lead to piles of trash being dumped on the Lebanese coast.
-							</p>
-							<p>
-								The garbage crisis has become one of the great scourges of the ocean, and in an attempt by product designer Jean Paul Fares to reuse plastic waste, he has managed to transform then into a beautiful display of multifunctional products. Galvanized by the inactivity of the government and the people in dealing with the proliferating garbage crisis, Jean Paul partnered with Recycle Beirut and beach cleanup groups around Lebanon; collecting single use plastic that cannot be recycled. JP put his background in industrial programming into use; working a machine that shreds hard plastic, allowing him to reassemble the tiny shards by mixing them with concrete and compiling them into lanterns, pots and table tops. JP ignores the radical misconception that plastics are used once and never again; instead he believes that those recovered and reprocessed hard wastes can have another chance at being commodious. What first started off as a hobby is now a national initiative that interests many; people are buying his products online, and a few concept stores display his work. JP hopes for a brighter future, one that involves the prevention of synthetic debris from getting into the ocean. He believes that it’s about taking a first step towards paying attention to the plastic epidemic threatening the sea, and utilizing the crisis to help create beneficial products. JP plans on expanding his project and collecting more plastic waste from the sea so that it can be recycled into new packaging and could eventually include building materials that would help construct houses.
-							</p>
-							<p>
-								The ultimate act of self-care is the preservation of nature. Ultimately, the real challenge lies in opposing an economic system that prospers using wasteful products and packaging. A change in perspective is mandatory for the continuation of life
-							</p>
+							<div class="story-txt-item">
+								<p>
+									Lebanon, a country once known for its beautiful beaches and blue waters is now awash in plastic. The shameful evidence of humanity’s “plastic footprint” is prevalent and incontrovertible; for years the Mediterranean Sea has been choked with garbage as part of Lebanon’s long-running waste crisis. The government’s negligence and the legal system’s failure in employing detailed policies on environmental protection has lead to piles of trash being dumped on the Lebanese coast.
+								</p>
+								<p>
+									The garbage crisis has become one of the great scourges of the ocean, and in an attempt by product designer Jean Paul Fares to reuse plastic waste, he has managed to transform then into a beautiful display of multifunctional products. Galvanized by the inactivity of the government and the people in dealing with the proliferating garbage crisis, Jean Paul partnered with Recycle Beirut and beach cleanup groups around Lebanon; collecting single use plastic that cannot be recycled. JP put his background in industrial programming into use; working a machine that shreds hard plastic, allowing him to reassemble the tiny shards by mixing them with concrete and compiling them into lanterns, pots and table tops.
+								</p>
+							</div>
+							<div class="story-txt-item">
+								<p>
+									JP ignores the radical misconception that plastics are used once and never again; instead he believes that those recovered and reprocessed hard wastes can have another chance at being commodious. What first started off as a hobby is now a national initiative that interests many; people are buying his products online, and a few concept stores display his work. JP hopes for a brighter future, one that involves the prevention of synthetic debris from getting into the ocean. He believes that it’s about taking a first step towards paying attention to the plastic epidemic threatening the sea, and utilizing the crisis to help create beneficial products. JP plans on expanding his project and collecting more plastic waste from the sea so that it can be recycled into new packaging and could eventually include building materials that would help construct houses.
+								</p>
+								<p>
+									The ultimate act of self-care is the preservation of nature. Ultimately, the real challenge lies in opposing an economic system that prospers using wasteful products and packaging. A change in perspective is mandatory for the continuation of life.
+								</p>
+							</div>
 						</div>
-						<div class="scroller-dark">
+						<!-- <div class="scroller-dark">
 							<a class="scroller inner-link" href="#see-artworks">The Process</a>
-						</div>
+						</div> -->
 					</div>	
 				</div>
 			</div>
@@ -653,68 +661,65 @@
 				//console.log(screen.width);
 			});
 
-		$(document).ready(function(){
-			$('.product-list-wrap').slick({
-				arrows: false,
-				dots: true,
-				infinite: true,
-				autoplay: true,
-				fade: true,
-				adaptiveHeight: true,
-				slidesToShow: 1
-			});
+			$(document).ready(function(){
+				$('.product-list-wrap').slick({
+					arrows: false,
+					dots: true,
+					infinite: true,
+					autoplay: true,
+					fade: true,
+					adaptiveHeight: true,
+					slidesToShow: 1
+				});
 
-			
-		//$('#del-mobile').remove();	
+				
+			//$('#del-mobile').remove();	
 
-		// $('#del').show();
+			// $('#del').show();
 
-		var d = $('#del-mobile');
-		var m = $('#show-mobile');
+			var d = $('#del-mobile');
+			var m = $('#show-mobile');
 
-		function checkWidth() {
-			var windowWidth = $(window).width();
-			if (windowWidth <= 992) {
+			function checkWidth() {
+				var windowWidth = $(window).width();
+				if (windowWidth <= 992) {
 
-				$('#show-mobile').addClass('show');
-				$('.hide-m.replace').replaceWith(m);
-			    $('#del-mobile').replaceWith('<div class="hide-d replace"></div>');
-			    //$('#show-mobile').show();
+					$('#show-mobile').addClass('show');
+					$('.hide-m.replace').replaceWith(m);
+				    $('#del-mobile').replaceWith('<div class="hide-d replace"></div>');
+				    //$('#show-mobile').show();
 
-			} else {
+				} else {
 
-				$('#del-mobile').addClass('show');
-				$('.hide-d.replace').replaceWith(d);
-				$('#show-mobile').replaceWith('<div class="hide-m replace"></div>');
-			    //$('#del-mobile').show();
-			    //$('#show-mobile').remove();		
+					$('#del-mobile').addClass('show');
+					$('.hide-d.replace').replaceWith(d);
+					$('#show-mobile').replaceWith('<div class="hide-m replace"></div>');
+				    //$('#del-mobile').show();
+				    //$('#show-mobile').remove();		
+
+				}
 
 			}
 
-		}
+			// function checkWidth() {
+			// 	var windowWidth = $(window).width();
+			// 	if (windowWidth <= 992) {
+			// 	    $('#show-mobile').show();
+			// 	} else {
+			// 	    $('#show-mobile').remove();
+			// 	}
+			// }
 
-		// function checkWidth() {
-		// 	var windowWidth = $(window).width();
-		// 	if (windowWidth <= 992) {
-		// 	    $('#show-mobile').show();
-		// 	} else {
-		// 	    $('#show-mobile').remove();
-		// 	}
-		// }
+			checkWidth();
 
-		checkWidth();
+			$(window).resize(checkWidth);
 
-		$(window).resize(checkWidth);
-
-		function checkWidth() {
-			var windowWidth = $(window).width();
-			if (windowWidth > 992) {
-				$('.product-list-wrap').slick('unslick');		
-			}
-		}
-
-		
-
+			function checkWidth() {
+				var windowWidth = $(window).width();
+				if (windowWidth > 992) {
+					$('.product-list-wrap').slick('unslick');		
+				}
+			}	
 
 
 			$('.thumb-list-wrap').slick({
@@ -726,6 +731,21 @@
 				slidesToShow: 1
 			});
 
+			$('.story-text-wrap').slick({
+				arrows: false,
+				dots: true,
+				infinite: false,
+				autoplay: false,
+				fade: false,
+				slidesToShow: 1
+			});
+
+			function checkWidth() {
+				var windowWidth = $(window).width();
+				if (windowWidth > 992) {
+					$('.story-text-wrap').slick('unslick');		
+				}
+			}
 
 		});
 	</script>
