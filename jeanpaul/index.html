@@ -115,9 +115,9 @@
 		<section id="jp-products" class="products-available-wrap">
 			<div class="container">				
 				<div class="row">
-					<div class="prod-text text-center visible-xs visible-sm hidden-lg">
+					<!-- <div class="prod-text text-center visible-xs visible-sm hidden-lg">
 						<h3>JP’s <strong>Products</strong> are available <strong>for sale!</strong></h3>
-					</div>
+					</div> -->
 					<div class="product-list-wrap">
 						<div class="product-item col-md-3">
 							<a href="#">
@@ -658,6 +658,26 @@
 
 	<script>
 
+
+		$('.product-list-wrap').slick({
+			arrows: false,
+			dots: true,
+			infinite: true,
+			autoplay: true,
+			fade: true,
+			adaptiveHeight: true,
+			slidesToShow: 1
+		});
+
+		$('.story-text-wrap').slick({
+			arrows: false,
+			dots: true,
+			infinite: false,
+			autoplay: false,
+			fade: false,
+			slidesToShow: 1
+		});
+
 		$('.thumb-list-wrap').slick({
 			arrows: false,
 			dots: true,
@@ -666,64 +686,47 @@
 			fade: true,
 			slidesToShow: 1
 		});
- 
+
+
+		$(document).ready(function(){
+
+		var d = $('#del-mobile');
+		var m = $('#show-mobile');
+
 		function checkWidth() {
 			var windowWidth = $(window).width();
 			if (windowWidth <= 992) {
-				$('.product-list-wrap').slick('unslick');						
-				$('.story-text-wrap').slick('unslick');		
-				
+
 				$('#show-mobile').addClass('show');
 				$('.hide-m.replace').replaceWith(m);
 			    $('#del-mobile').replaceWith('<div class="hide-d replace"></div>');
 			    //$('#show-mobile').show();
-				
-				
-				$('.product-list-wrap').slick({
-					arrows: false,
-					dots: true,
-					infinite: true,
-					autoplay: true,
-					fade: true,
-					adaptiveHeight: true,
-					slidesToShow: 1
-				});
-
-				$('.story-text-wrap').slick({
-					arrows: false,
-					dots: true,
-					infinite: false,
-					autoplay: false,
-					fade: false,
-					slidesToShow: 1
-				});
 
 			} else {
-				$('.product-list-wrap').slick('unslick');						
-				$('.story-text-wrap').slick('unslick');		
+
 				$('#del-mobile').addClass('show');
 				$('.hide-d.replace').replaceWith(d);
 				$('#show-mobile').replaceWith('<div class="hide-m replace"></div>');	
 
 			}
 
+		}		
+
+
+		checkWidth();
+
+		$(window).resize(checkWidth);
+
+		function checkWidth() {
+			var windowWidth = $(window).width();
+			if (windowWidth > 992) {
+				$('.product-list-wrap').slick('unslick');						
+				$('.story-text-wrap').slick('unslick');		
+			}
 		}	
-		
-		$(document).ready(function(){
 
-			var d = $('#del-mobile');
-			var m = $('#show-mobile');
-		
-		});
-		
-		$(window).load(function(){
-			checkWidth();
-		});
-		
-		$(window).resize(function(){
-			checkWidth();
-		});
 
+		});
 	</script>
   </body>
 </html>

@@ -366,7 +366,7 @@ nav.fixed.scrolled { position: fixed !important; }
 /*Product*/
 .products-available-wrap {
 	background: #fff;
-	padding:30px 0 20px;
+	padding:50px 0 40px;
 }
 .prod-text { margin-bottom: 35px; }
 .product-item { 
