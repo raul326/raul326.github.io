@@ -107,8 +107,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="visible-lg"><div class="align-bottom scroller"><a class="scroller inner-link" href="#about-the-artist">Explore JP's Products</a></div></div>
-					<div class="visible-xs"><div class="align-bottom scroller" style="bottom: -220px !important"><a class="scroller inner-link" href="#about-the-artist">Explore JP's Products</a></div></div>
+					<div class="visible-lg"><div class="align-bottom scroller"><a class="scroller inner-link" href="#jp-products">Explore JP's Products</a></div></div>
+					<div class="visible-xs"><div class="align-bottom scroller" style="bottom: -300px !important"><a class="scroller inner-link" href="#jp-products">Explore JP's Products</a></div></div>
 				</li>
 			</ul>
 		</section><!-- end of slider -->
@@ -658,27 +658,7 @@
 
 	<script>
 
-
-		$('.product-list-wrap').slick({
-			arrows: false,
-			dots: true,
-			infinite: true,
-			autoplay: true,
-			fade: true,
-			adaptiveHeight: true,
-			slidesToShow: 1
-		});
-
-		$('.story-text-wrap').slick({
-			arrows: false,
-			dots: true,
-			infinite: false,
-			autoplay: false,
-			fade: false,
-			slidesToShow: 1
-		});
-
-		$('.thumb-list-wrap').slick({
+$('.thumb-list-wrap').slick({
 			arrows: false,
 			dots: true,
 			infinite: true,
@@ -686,47 +666,64 @@
 			fade: true,
 			slidesToShow: 1
 		});
-
-
-		$(document).ready(function(){
-
-		var d = $('#del-mobile');
-		var m = $('#show-mobile');
-
+ 
 		function checkWidth() {
 			var windowWidth = $(window).width();
 			if (windowWidth <= 992) {
-
+				$('.product-list-wrap').slick('unslick');						
+				$('.story-text-wrap').slick('unslick');		
+				
 				$('#show-mobile').addClass('show');
 				$('.hide-m.replace').replaceWith(m);
 			    $('#del-mobile').replaceWith('<div class="hide-d replace"></div>');
 			    //$('#show-mobile').show();
+				
+				
+				$('.product-list-wrap').slick({
+					arrows: false,
+					dots: true,
+					infinite: true,
+					autoplay: true,
+					fade: true,
+					adaptiveHeight: true,
+					slidesToShow: 1
+				});
+
+				$('.story-text-wrap').slick({
+					arrows: false,
+					dots: true,
+					infinite: false,
+					autoplay: false,
+					fade: false,
+					slidesToShow: 1
+				});
 
 			} else {
-
+				$('.product-list-wrap').slick('unslick');						
+				$('.story-text-wrap').slick('unslick');		
 				$('#del-mobile').addClass('show');
 				$('.hide-d.replace').replaceWith(d);
 				$('#show-mobile').replaceWith('<div class="hide-m replace"></div>');	
 
 			}
 
-		}		
-
-
-		checkWidth();
-
-		$(window).resize(checkWidth);
-
-		function checkWidth() {
-			var windowWidth = $(window).width();
-			if (windowWidth > 992) {
-				$('.product-list-wrap').slick('unslick');						
-				$('.story-text-wrap').slick('unslick');		
-			}
 		}	
+		
+		$(document).ready(function(){
 
-
+			var d = $('#del-mobile');
+			var m = $('#show-mobile');
+		
 		});
+		
+		$(window).load(function(){
+			checkWidth();
+		});
+		
+		$(window).resize(function(){
+			checkWidth();
+		});
+
 	</script>
   </body>
 </html>
