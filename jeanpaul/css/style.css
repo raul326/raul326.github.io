@@ -367,19 +367,19 @@ nav.fixed.scrolled { position: fixed !important; }
 .products-available-wrap {
 	background: url(../images/jp-product-bg.jpg) no-repeat;	
 	background-size: cover;
-	padding:80px 0 60px;
+	padding:50px 0 40px;
 	position: relative;
 }
 .product-overlay-bg {
-	background: rgb(0,0,0,.8);
+	background: url(../images/jp-product-overlay.png) no-repeat;
 	bottom: 0;
-	height: 420px;
+	height: 470px;
 	left: 0;
 	position: absolute;
 	width: 100%;
 	z-index: 1;
 }
-.product-overlay-bg::after {
+/*.product-overlay-bg::after {
 	border-color: transparent transparent rgb(0,0,0,.8) transparent;
 	border-style: solid;
 	border-width: 0 0 85px 100vw;
@@ -388,15 +388,17 @@ nav.fixed.scrolled { position: fixed !important; }
 	position: absolute;
 	top: -85px;
 	width: 100%;
-}
+}*/
 
 .products-available-wrap .container { overflow: hidden; }
 
-.products-available-wrap .prod-text { padding-bottom: 20px; }
+.products-available-wrap .prod-text { padding-bottom: 25px; }
 .products-available-wrap .prod-text h3 {
 	color: #000;
-	font-size: 34px;
+	font-size: 32px;
 	font-weight: bold;
+	padding: 0 15px;
+	line-height: 1;
 }
 
 
@@ -472,6 +474,7 @@ nav.fixed.scrolled { position: fixed !important; }
 	text-indent: -9999px;
 	margin:0;
 	top: 165px;
+	z-index: 999;
 }
 
 .product-list-wrap button.slick-prev {
@@ -498,7 +501,7 @@ nav.fixed.scrolled { position: fixed !important; }
 	z-index: 2;
 }
 .product-list-wrap .product-img .img-shadow {
-	background: url(../images/jp-products/img-shadow.png) no-repeat;
+	background: url(../images/jp-products/img-shadow.png) no-repeat center center;
 	width: 100%;
 	height: 87px;
 	position: absolute;
@@ -525,13 +528,16 @@ nav.fixed.scrolled { position: fixed !important; }
 	font-weight: bold;
 }
 
+/*JP mission*/
+.jp-mission-img img { display: inline-block; }
 
 
 /*About Project*/
 .about-project-wrap {
-	background: url(../images/about-project-img.png) no-repeat center center;
+	background: #040404 url(../images/about-project-img.png) no-repeat center -170px;
 	background-size: cover;
-	min-height: 780px;
+/*	min-height: 780px;*/
+	padding-bottom: 0;
 }
 .about-project-wrap h1 { 
 	color: #fff; 
@@ -559,7 +565,7 @@ nav.fixed.scrolled { position: fixed !important; }
 .ig-post-wrap {
     max-width: 360px;
     display: inline-block;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 .ig-heading {
 	-webkit-border-radius: 8px 8px 0 0;
@@ -614,6 +620,13 @@ nav.fixed.scrolled { position: fixed !important; }
 }
 
 .about-project-wrap .scroller {  bottom: 35px; }
+
+.insta-add-list { position: relative; }
+.insta-img-item {     
+	float: left;
+    overflow: hidden; 
+}
+
 
 /*Join Movement*/
 .join-movement-wrap {
@@ -790,10 +803,13 @@ nav.fixed.scrolled { position: fixed !important; }
 }
 
 
-
 .thumb-list-wrap .slick-dots { z-index: 1000; }
 
 .has-bottom-bar { padding-bottom: 70px; }
+
+/*About Snippet*/
+#about-snippet { background: #ECECEC !important; }
+
 /*------------------------------------------------------------------
 	[ 6 Footer ]
 -------------------------------------------------------------------*/
@@ -814,7 +830,6 @@ nav.fixed.scrolled { position: fixed !important; }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-
 
 
 .join-movement-wrap {
@@ -855,6 +870,7 @@ nav.fixed.scrolled { position: fixed !important; }
 /*Product*/
 .products-available-wrap .prod-text h3 {
     font-size: 50px;
+    line-height: 1;
 }
 
 /*.product-img {
@@ -975,12 +991,34 @@ nav.fixed.scrolled { position: fixed !important; }
 @media (min-width: 1200px) {
 
 /*Product*/
+.products-available-wrap { padding-bottom: 50px; }
+
+.product-overlay-bg {
+	background: rgb(0,0,0,.8);
+	bottom: 0;
+	height: 390px;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	z-index: 1;
+}
+.product-overlay-bg::after {
+	border-color: transparent transparent rgb(0,0,0,.8) transparent;
+	border-style: solid;
+	border-width: 0 0 85px 100vw;
+	content: "";
+	height: 0;
+	position: absolute;
+	top: -85px;
+	width: 100%;
+}
+
 .product-img.h185 { 
 	height: 185px; 
 	overflow: hidden;
 }
 .prod-text { 
-	height: 145px; 
+/*	height: 145px; */
 	padding-top: 20px;
 }
 .prod-text h3 {
