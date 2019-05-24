@@ -242,7 +242,7 @@ nav.fixed.scrolled { position: fixed !important; }
 
 .scrolled .module.widget-handle.m-widget-2 { top: 10px; }
 
-
+/*Donate Shop Mobile*/
 .donate-shop-bot {
 	background: #fff;
 	position: fixed;
@@ -286,6 +286,35 @@ nav.fixed.scrolled { position: fixed !important; }
 .donate-shop-bot .bottom-donate img { 
 	margin-right: 10px; 
 }
+
+#menu-bot-4 .bottom-donate,
+#menu-bot-4 .bottom-shop {
+	max-width: 140px;
+	width: 100%;
+	display: inline-block;
+	margin: 0 5px;
+}
+#menu-bot-4 .bottom-donate {
+	border:0;
+	padding:0;
+}
+
+#menu-bot-4 .inner-link {
+	background-color: #DA9BAA;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	color: #fff;
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+	width: 100%;
+	text-transform: uppercase;
+}
+
+#menu-bot-4 .inner-link:hover { background-color: #976370; }
+
+
+
 
 /*------------------------------------------------------------------
 	[ 4 Banner ]
@@ -625,8 +654,56 @@ nav.fixed.scrolled { position: fixed !important; }
 .insta-img-item {     
 	float: left;
     overflow: hidden; 
+    text-align: center;
 }
 
+/*JP instagram*/
+.jp-instagram-wrap {
+	background: #fff;
+}
+.jp-instagram-wrap h1 { 
+	text-shadow: 0 0 0; 
+	line-height: 1;
+}
+.jp-insta-info { 
+/*	display: flex; */
+	padding-top: 30px;
+}
+.jp-insta-info .left { 
+	padding: 0 20px; 
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.insta-right-heading {
+	display: flex; 
+}
+
+.insta-right-heading h4 {
+	padding-right: 30px;
+	font-family: Roboto;
+}
+
+.jp-insta-info .right .insta-right-heading a {
+	background: #3897f0;
+	border-radius: 4px;
+	color: #fff;
+	display: inline-block;
+	font-family: Roboto;
+	font-size: 16px;
+	font-weight: 500;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	width: 100px;
+}
+.jp-insta-info .right span,
+.jp-insta-info .right a { 
+	font-weight: normal;
+	color: #037BF3;
+}
+
+.jp-insta-info .right br { display: block; }
 
 /*Join Movement*/
 .join-movement-wrap {
@@ -810,6 +887,55 @@ nav.fixed.scrolled { position: fixed !important; }
 /*About Snippet*/
 #about-snippet { background: #ECECEC !important; }
 
+
+/*Slick*/
+
+.slick-dots {
+	width: 100%;
+	position: absolute;
+	bottom: -15px;
+	z-index: 10;
+	text-align: center;
+	margin: 0;
+}
+.slick-dots li {
+	margin: 0 6px;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+}
+.slick-dots li button {
+	width: 11px;
+	height: 11px;
+	display: block;
+	background: #666;
+	background: rgba(0,0,0,.5);
+	cursor: pointer;
+	text-indent: -9999px;
+	-webkit-box-shadow: inset 0 0 3px rgba(0,0,0,.3);
+	-moz-box-shadow: inset 0 0 3px rgba(0,0,0,.3);
+	-o-box-shadow: inset 0 0 3px rgba(0,0,0,.3);
+	box-shadow: inset 0 0 3px rgba(0,0,0,.3);
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+.slick-dots li button {
+	background: #666;
+	border: 2px solid #202020;
+	width: 10px;
+	height: 10px;
+}
+
+.slick-dots li.slick-active button  {
+	background: #000;
+	background: rgba(0,0,0,.9);
+	cursor: default;
+}
+.slick-dots li.slick-active button  {
+	background: #fff;
+}
+
 /*------------------------------------------------------------------
 	[ 6 Footer ]
 -------------------------------------------------------------------*/
@@ -858,6 +984,17 @@ nav.fixed.scrolled { position: fixed !important; }
 .jp-story-wrap .heading-story {
 	padding: 18px 0 18px 140px;
 	background-position: left center;
+}
+
+/*JP instagram*/
+.jp-insta-info { 
+	display: flex; 
+	padding-top: 30px;
+}
+
+.jp-insta-info .left { 
+	margin: 15px 50px 0  0; 
+	padding: 0;
 }
 
 
