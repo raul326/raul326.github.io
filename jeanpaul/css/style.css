@@ -305,8 +305,7 @@ nav.fixed.scrolled { position: fixed !important; }
 	-webkit-border-radius: 8px;
 	color: #fff;
 	display: inline-block;
-	height: 50px;
-	line-height: 50px;
+	padding:10px;
 	width: 100%;
 	text-transform: uppercase;
 }
