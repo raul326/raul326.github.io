@@ -313,6 +313,14 @@ nav.fixed.scrolled { position: fixed !important; }
 
 #menu-bot-4 .inner-link:hover { background-color: #976370; }
 
+#menu-bot-4 .bottom-donate img {
+	width: 19px;
+	height: 16px;
+}
+#menu-bot-4 .bottom-shop img {
+	width: 16px;
+	height: 16px
+}
 
 
 
@@ -498,11 +506,13 @@ nav.fixed.scrolled { position: fixed !important; }
 .product-list-wrap button[type="button"] {
 	border:0;
 	height: 39px;
-	position: absolute;
-	width: 23px;
-	text-indent: -9999px;
+	height: 40px;
 	margin:0;
+	position: absolute;
+	text-indent: -9999px;
 	top: 165px;
+	width: 23px;
+	width: 24px;
 	z-index: 999;
 }
 
