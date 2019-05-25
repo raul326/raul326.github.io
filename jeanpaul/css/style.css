@@ -289,7 +289,7 @@ nav.fixed.scrolled { position: fixed !important; }
 
 #menu-bot-4 .bottom-donate,
 #menu-bot-4 .bottom-shop {
-	max-width: 140px;
+	max-width: 135px;
 	width: 100%;
 	display: inline-block;
 	margin: 0 5px;
