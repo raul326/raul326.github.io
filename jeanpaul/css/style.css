@@ -1288,7 +1288,8 @@ nav.fixed.scrolled { position: fixed !important; }
     padding-top: 20px;
 }
 .other-product-list .prod-text h3 {
-    font-size: 38px;
+	font-size: 33px;
+	line-height: 1.4;
 }
 
 
