@@ -337,6 +337,35 @@ nav.fixed.scrolled { position: fixed !important; }
 }
 
 .image-slider .slides { margin:0; }
+
+
+.nameplate .job br {
+	display: block;
+}
+.nameplate .job span { font-style: normal; }
+
+.image-slider .scroller img {
+	width: 24px;
+	height: 40px;
+	margin: 0 0 7px 10px;
+	animation-name: hvr-hang-sink, hvr-hang;
+	-webkit-animation-duration: .3s, 1.5s;
+	animation-duration: .3s, 1.5s;
+	-webkit-animation-delay: 0s, .3s;
+	animation-delay: 0s, .3s;
+	-webkit-animation-timing-function: ease-out, ease-in-out;
+	animation-timing-function: ease-out, ease-in-out;
+	-webkit-animation-iteration-count: 1, infinite;
+	animation-iteration-count: 1, infinite;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	-webkit-animation-direction: normal, alternate;
+	animation-direction: normal, alternate;
+}
+.image-slider .scroller:after {
+	content: "";
+}
+
 /*------------------------------------------------------------------
 	[ 5 Content ]
 -------------------------------------------------------------------*/
@@ -401,7 +430,7 @@ nav.fixed.scrolled { position: fixed !important; }
 
 /*Product*/
 .products-available-wrap {
-	background: url(../images/jp-product-bg.jpg) no-repeat;	
+	background: #cadcee;	
 	background-size: cover;
 	padding:50px 0 40px;
 	position: relative;
