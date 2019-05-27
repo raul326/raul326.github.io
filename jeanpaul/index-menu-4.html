@@ -603,6 +603,11 @@
 	 		if (windowWidth > 992) {						
 	 			$('.story-text-wrap').slick('unslick');		
 	 		}
+
+	 		$("#jp-products .slick-prev").wrapInner("<span></span>")
+			$("#jp-products .slick-next").wrapInner("<span></span>");;
+			$("#jp-products .slick-prev").append("<img id='theImg' src='images/jp-products/arrow-left.png'/>");
+			$("#jp-products .slick-next").append("<img id='theImg' src='images/jp-products/arrow-right.png'/>");
 	 	}
 
  		checkWidth();

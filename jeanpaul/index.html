@@ -268,6 +268,106 @@
 				</div>	
 			</section>
 		</section><!-- end of join-movement-wrap -->
+		<section class="f-movements-wrap" id="ig-f-movements">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-lg-3">
+						<div class="ig-movement-item">
+							<div class="insta-heading" style="min-height: auto">
+								<div class="left">
+									<img class="img-circle" src="images/insta-movements/insta-profile-1.jpg" alt="">
+								</div>
+								<div class="right">
+									<label class="mb0">recyclelebanon</label>
+									<p class="mb8 mt5">Regenerative Development</p>
+									<a class="btn btn-primary btn-instagram mb0" href="https://www.instagram.com/recyclelebanon/" target="_blank">Follow</a>
+								</div>
+							</div>
+							<div class="thumb-list-wrap" id="recyclelebanon">
+								<div class="thumb list-one">
+									<a href="https://www.instagram.com/p/BxKEaT4gkCJ/" target="_blank"></a>
+								</div>
+								<div class="thumb list-two">
+									<a href="https://www.instagram.com/p/Bw04dligKYy/" target="_blank"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-lg-3">
+						<div class="ig-movement-item">
+							<div class="insta-heading" style="min-height: auto">
+								<div class="left">
+									<img class="img-circle" src="images/insta-movements/insta-profile-4.jpg" alt="">
+								</div>
+								<div class="right">
+									<label class="mb0">recyclebeirut</label>
+									<p class="mb8 mt5"></p>
+									<a class="btn btn-primary btn-instagram mb0" href="https://www.instagram.com/recyclebeirut/" target="_blank">Follow</a>
+								</div>
+							</div>
+							<div class="thumb-list-wrap" id="recycle-beirut">
+								<div class="thumb list-one">
+									<a href="https://www.instagram.com/p/Br8rNOWgV4N/" target="_blank"></a>
+								</div>
+								<div class="thumb list-two">
+									<a href="https://www.instagram.com/p/Bp9jEACjnnf/" target="_blank"></a>
+								</div>
+								<div class="thumb list-three">
+									<a href="https://www.instagram.com/p/Bo-8vPShTLu/" target="_blank"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-lg-3">
+						<div class="ig-movement-item">
+							<div class="insta-heading" style="min-height: auto">
+								<div class="left">
+									<img class="img-circle" src="images/insta-movements/insta-profile-3.jpg" alt="">
+								</div>
+								<div class="right">
+									<label class="mb0">ouzville</label>
+									<p class="mb8 mt5">OUZVILLE</p>
+									<a class="btn btn-primary btn-instagram mb0" href="https://www.instagram.com/p/BwDLJilg4oy/" target="_blank">Follow</a>
+								</div>
+							</div>
+							<div class="thumb-list-wrap" id="ouzille">
+								<div class="thumb list-one">
+									<a href="https://www.instagram.com/p/BwDLJilg4oy/" target="_blank"></a>
+								</div>
+								<div class="thumb list-two">
+									<a href="https://www.instagram.com/p/Bw-MHKigUlG/" target="_blank"></a>
+								</div>
+								<div class="thumb list-three">
+									<a href="https://www.instagram.com/p/BwSETlfAEXi/"	" target="_blank"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-lg-3">
+						<div class="ig-movement-item">
+							<div class="insta-heading" style="min-height: auto">
+								<div class="left">
+									<img class="img-circle" src="images/insta-movements/insta-profile-2.png" alt="">
+								</div>
+								<div class="right">
+									<label class="mb0">5minutebeachcleanup</label>
+									<p class="mb8 mt5">BE A HERO FOR 5</p>
+									<a class="btn btn-primary btn-instagram mb0" href="https://www.instagram.com/5minutebeachcleanup/" target="_blank">Follow</a>
+								</div>
+							</div>
+							<div class="thumb-list-wrap" id="minutebeachcleanup">
+								<div class="thumb list-one">
+									<a href="https://www.instagram.com/p/BxPlmRQH68e/" target="_blank"></a>
+								</div>
+								<div class="thumb list-two">
+									<a href="https://www.instagram.com/p/BxCtoAXn4qC/" target="_blank"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
 		<section class="jp-instagram-wrap">
 			<div class="container">				
@@ -591,6 +691,11 @@
 	 		if (windowWidth > 992) {						
 	 			$('.story-text-wrap').slick('unslick');		
 	 		}
+
+	 		$("#jp-products .slick-prev").wrapInner("<span></span>")
+			$("#jp-products .slick-next").wrapInner("<span></span>");;
+			$("#jp-products .slick-prev").append("<img id='theImg' src='images/jp-products/arrow-left.png'/>");
+			$("#jp-products .slick-next").append("<img id='theImg' src='images/jp-products/arrow-right.png'/>");
 	 	}
 
  		checkWidth();

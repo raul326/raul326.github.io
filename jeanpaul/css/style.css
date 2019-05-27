@@ -289,7 +289,7 @@ nav.fixed.scrolled { position: fixed !important; }
 
 #menu-bot-4 .bottom-donate,
 #menu-bot-4 .bottom-shop {
-	max-width: 135px;
+	max-width: 125px;
 	width: 100%;
 	display: inline-block;
 	margin: 0 5px;
@@ -305,7 +305,7 @@ nav.fixed.scrolled { position: fixed !important; }
 	-webkit-border-radius: 8px;
 	color: #fff;
 	display: inline-block;
-	padding:10px;
+	padding:5px;
 	width: 100%;
 	text-transform: uppercase;
 }
@@ -503,24 +503,27 @@ nav.fixed.scrolled { position: fixed !important; }
 }
 
 .product-list-wrap button[type="button"] {
+	background-color: transparent;
 	border:0;
-	height: 39px;
-	height: 40px;
 	margin:0;
 	position: absolute;
-	text-indent: -9999px;
 	top: 165px;
-	width: 23px;
 	width: 24px;
+	height: 40px;
 	z-index: 999;
+}
+.product-list-wrap button[type="button"] span {
+	text-indent: -9999px;
+	display: none;
 }
 
 .product-list-wrap button.slick-prev {
-	background: url(../images/jp-products/arrow-left.png) no-repeat;
+/*	background-image:url(../images/jp-products/arrow-left.png);
+	background-repeat: no-repeat;*/
 	left: 15px;
 }
 .product-list-wrap button.slick-next {
-	background: url(../images/jp-products/arrow-right.png) no-repeat;
+	/*background: url(../images/jp-products/arrow-right.png) no-repeat;*/
 	right: 15px;
 }
 
