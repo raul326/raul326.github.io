@@ -339,10 +339,8 @@ nav.fixed.scrolled { position: fixed !important; }
 .image-slider .slides { margin:0; }
 
 
-.nameplate .job br {
-	display: block;
-}
-.nameplate .job span { font-style: normal; }
+.nameplate .sub-txt { font-size: 18px; }
+
 .image-slider .scroller { position: relative; }
 .image-slider .scroller img,
 .jp-missionum-wrap .scroller img {    
