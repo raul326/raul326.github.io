@@ -1003,6 +1003,7 @@ nav.fixed.scrolled { position: fixed !important; }
 	float: left; 
 	height: 250px;
 	overflow-y: hidden;
+	padding: 0 35px;
 }
 
 .other-product-list button[type="button"] {
@@ -1010,15 +1011,15 @@ nav.fixed.scrolled { position: fixed !important; }
 	border: 0;
 	margin: 0;
 	position: absolute;
-	top: 110px;
-	width: 24px;
-	height: 40px;
+	top: 105px;
+	width: 20px;
+	height: 34px;
 	z-index: 999;
 }
 
-.other-product-list button.slick-prev { left: 15px; }
+.other-product-list button.slick-prev { left: 10px; }
 
-.other-product-list button.slick-next { right: 15px; }
+.other-product-list button.slick-next { right: 10px; }
 
 .other-product-list button[type="button"] span { display: none; }
 /*------------------------------------------------------------------
@@ -1168,6 +1169,7 @@ nav.fixed.scrolled { position: fixed !important; }
 .other-product-list .product-item {
 	height: initial;
 	margin-bottom: 30px;
+	padding: 0 15px;
 }
 
 .other-product-list .prod-text {
