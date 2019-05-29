@@ -360,10 +360,8 @@ nav.fixed.scrolled { position: fixed !important; }
 	animation-fill-mode: forwards;
 	-webkit-animation-direction: normal, alternate;
 	animation-direction: normal, alternate;
-
-
 	position: absolute;
-	bottom: -30px;
+	bottom: -25px;
 	left: 46%;
 }
 .image-slider .scroller:after,
