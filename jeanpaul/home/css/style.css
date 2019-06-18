@@ -3737,6 +3737,32 @@ aside .latest-post li figure {width: 75px;}
 /* home - blog grid */
 .highlight-bg-text {padding: 5px 16px; display: inline-block; margin-bottom: 15px;}
 
+
+/* tracing voices new design */
+.tv-sub-text {
+	color: #fff;
+	font-size: 20px;
+	padding: 30px 0 60px ;
+}
+
+.tv-box-list .box-item { 
+	overflow: hidden; 
+	margin-bottom: 30px;
+	color: #000
+}
+.tv-box-list .box-item a { color: #000 }
+.tv-box-list .box-item-img {
+	background-position: center center;
+	background-size:cover;
+	height:90px;
+}
+.tv-box-list .box-item-title {
+	color: #000;
+	background:#fff; 
+	display: none;
+}
+
+
 /* ===================================
    Others
 ====================================== */
@@ -3843,3 +3869,17 @@ aside .latest-post li figure {width: 75px;}
 		background-image: url("../../../img/home-covers/haneen-cover-tablet.jpg") !important;
 	}
 }
+
+@media (min-width: 768px) {
+	.tv-box-list .box-item-img { height: 200px; }
+	.tv-box-list .box-item-title { 
+		display: block; 
+		background: #f9f9f9 url(../../images/Path.png) no-repeat center right 10px;
+		text-align: left;
+		padding:10px 15px;
+	}
+}
+
+@media (min-width: 375px) and (max-width: 414px) {
+	.jp-slider { background-position: -620px 0px !important; }
+} 

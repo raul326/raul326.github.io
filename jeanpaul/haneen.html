@@ -20,13 +20,22 @@
       <link href="css/custom-pantone.css" rel="stylesheet" type="text/css" media="all">
       <link rel="stylesheet" href="css/haneen.css">
       <link rel="stylesheet" href="css/yt-lazyload.css">
+      <style type="text/css">
+         @media (min-width: 1200px) {
+            .menu>li a, .menu>li {  
+               transition: none !important;
+               -moz-transition: none !important;
+               -webkit-transition: none !important;
+            }
+         }
+      </style>
    </head>
    <body class="scroll-assist">
       <div class="nav-container">
          <nav class="absolute transparent">
             <div class="nav-bar">
                <div class="module left">
-                  <a href="index.html">
+                  <a href="/">
                      <img class="logo logo-light" src="images/TVlogo.png">
                      <div class="vnu"><img class="logo logo-dark" src="images/TVlogo-white.png"></div>
                   </a>
@@ -37,7 +46,7 @@
                <div class="module-group right">
                   <div class="module left">
                      <ul class="menu">
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="/">Home</a></li>
                         <li><a href="jp.html">Jean-Paul</a></li>
                         <li><a href="charlotte.html">Charlotte</a></li>
                         <li><a href="alireza.html">Alireza</a></li>
@@ -72,7 +81,9 @@
                      </div>
                   </div>
                </div>
-            </div>
+            </div>            
+            <span class="yelo-mobile"><img src="images/haneen/yelo.jpg"></span>
+            <span class="unicef-mobile"><img src="images/haneen/unicef.jpg"></span>
          </section>
          <section class="bg-primary ptb48" style="border-top: 1px solid rgba(204, 204, 204, 0.4)">
             <div class="container">
