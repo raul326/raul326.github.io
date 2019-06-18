@@ -3762,6 +3762,16 @@ aside .latest-post li figure {width: 75px;}
 	display: none;
 }
 
+.scroll-to-view { 
+	color: #fff; 
+	font-family: 'Roboto', Helvetica, sans-serif;
+	font-size: 16px; 
+	padding: 15px 0 10px;
+} 
+.scroll-to-view img { 
+	margin-right: 10px; 
+}
+
 
 /* ===================================
    Others
@@ -3849,7 +3859,8 @@ aside .latest-post li figure {width: 75px;}
 	background: none
 }
 #form-footer{
-	background: linear-gradient(to bottom, black 0%,black 12%,#000000 12%,#cadcee 12%,#cadcee 100%); 
+	/*background: linear-gradient(to bottom, black 0%,black 12%,#000000 12%,#cadcee 12%,#cadcee 100%); */
+	background: #cadcee;
 	color: #323232;
 }
 
@@ -3862,11 +3873,12 @@ aside .latest-post li figure {width: 75px;}
 		margin-left: -35px;
 	}
 	#form-footer{
-		background: linear-gradient(to bottom, black 0%,black 11%,#000000 11%,#cadcee 11%,#cadcee 100%); 	
+		/*background: linear-gradient(to bottom, black 0%,black 12%,#000000 12%,#cadcee 12%,#cadcee 100%); */
+		background: #cadcee; 	
 	}
 
 	.haneen-cover{
-		background-image: url("../../../img/home-covers/haneen-cover-tablet.jpg") !important;
+		background-image: url("../../images/home-covers/haneen-cover-tablet.jpg") !important;
 	}
 }
 
