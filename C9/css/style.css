@@ -247,7 +247,7 @@ a.btn-1 {
 
   color: #fff;
   display: inline-block;
-  font-size: 16px
+  font-size: 16px;
   font-weight: 600;
   border-radius: 50px;
   width: 100%;
@@ -262,6 +262,25 @@ background: -webkit-linear-gradient(45deg,  rgb(237,28,28) 0%,rgb(193,5,5) 100%)
 background: linear-gradient(45deg,  rgb(237,28,28) 0%,rgb(193,5,5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed1c1c', endColorstr='#c10505',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
+}
+
+a.btn-2 {
+  border:2px solid #C9C9C9;
+  color: #CFCFCF;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 50px;
+  width: 100%;
+  padding:15px;
+  text-align: center;
+  margin-top: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+a.btn-2:hover {
+  border-color: #fff;
+  background: #fff;
+  color: #000;
 }
 /*------------------------------------------------------------------
   [ 5 Content ]
@@ -309,6 +328,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed1c1c', end
   padding: 80px 0;
   color: #fff;
   text-align: center;
+  border: solid;
+  border-image: linear-gradient(
+45deg, #db5af6, #ff7920) 1;
+    border-width: 7px 0 7px 0;
 }
 .easy-setup-wrapper #ply-btn {
   background: url(../images/play-button.png) no-repeat center left;
@@ -367,12 +390,6 @@ footer {
 
 
 @media (min-width: 992px) { 
-  .banner-txt { padding: 100px 0 0 }
-}
-
-
-@media (min-width: 1200px) {  
-
   .banner-wrapper { 
     overflow: hidden; 
     padding: 100px 0 50px;
@@ -385,7 +402,13 @@ footer {
     left: 20px;
   }   
 
-  .banner-txt { padding: 180px 0 0 }
+  .banner-txt { padding: 100px 0 50px 0 }
+}
+
+
+@media (min-width: 1200px) {  
+
+
   .banner-txt h1 {
     font-size: 46px;
   }
@@ -397,15 +420,17 @@ footer {
 @media (min-width: 1400px) {
 
   .container { width: 1140px }
+
+   .banner-txt { padding: 160px 0 20px 0 }
   .banner-wrapper { 
     overflow: hidden; 
-    padding: 110px 0 250px;
+    padding: 110px 0 175px;
   }
 
   .banner-img-wrap img {
     width: inherit;
     position: absolute;
-    top: 100px;
+    top: 110px;
     left: 50px;
   }    
 
