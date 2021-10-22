@@ -1,0 +1,279 @@
+  /*------------------------------------------------------------------
+  Project:    C9
+  Last Change:  
+  Develop By:  Raul Sevilles
+  Author: PPS
+  [Table of Contents]
+  1.  Fonts
+  2.  Global
+  3.  Header
+  4.  Banenr
+  5.  Content
+  6.  Footer
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+  [ 1 Fonts ]
+-------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+/*------------------------------------------------------------------
+  [ 2 Global ]
+-------------------------------------------------------------------*/
+* {
+  outline: none;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  background: #111111;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+p, label, h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  line-height: normal;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #070707;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 { font-size: 22px; }
+h3 { font-size: 20px; }
+h4 { font-size: 18px; }
+h5 { font-size: 16px; }
+h6 { font-size: 14px; }
+
+p {
+    line-height: 30px;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+
+a:focus,
+a:hover {
+  text-decoration: none;
+  outline: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  /*  outline: none;*/
+  -webkit-border-radius: 0;
+  -webkit-box-shadow: none;
+}
+
+pre,
+tt,
+code,
+kbd,
+samp,
+var {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ol {
+  font-family: Arial;
+  line-height: 24px;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+ol ol {
+  margin: 10px 0 0 0;
+  padding: 0 0 0 25px;
+}
+
+ol li {
+  margin: 0 0 5px 0;
+}
+
+ol, ul {
+  list-style-position: inside;
+}
+
+ol > li {
+  list-style-position: inside;
+}
+
+ol ol li {
+  list-style-type: lower-alpha;
+}
+
+ol ol ol li {
+  list-style-type: lower-roman;
+}
+
+q {
+  font-style: italic;
+}
+
+abbr,
+acronym {
+  border-bottom: 1px dotted #333;
+  cursor: help;
+}
+
+textarea {
+  resize: none;
+  overflow-y: auto;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+  *zoom: 1;
+}
+
+/*------------------------------------------------------------------
+  [ 3 Header ]
+-------------------------------------------------------------------*/
+.navbar { background: #000 }
+.navbar-nav .nav-item { padding: 0 15px; }
+.navbar-nav .nav-link { 
+  font-size: 16px;
+  padding:20px;
+  text-transform: uppercase;
+}
+.navbar-nav .nav-link.btn-1 { color: #fff; }
+/*------------------------------------------------------------------
+  [ 4 Banner ]
+-------------------------------------------------------------------*/
+.banner-wrapper {
+	background: url(../images/banner-bg.png) no-repeat 0 0;
+}
+.img-item { float: left }
+
+.banner-txt { 
+  padding: 30px 0 50px 0px; 
+  text-align: center;
+}
+.banner-txt h3 {
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 1.5px;
+  padding-bottom: 20px;
+}
+.banner-txt h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  padding-bottom: 50px;
+}
+
+/*------------------------------------------------------------------
+  [ 5 Content ]
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+  [ 6 Footer ]
+-------------------------------------------------------------------*/
+footer {
+  padding: 60px 0;
+  text-align: center;
+}
+footer .row div h4 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 20px 0;
+}
+footer .row div ul li { padding-bottom: 20px; }
+footer .row div ul li a { color: #fff; }
+footer .row div ul li a:hover { color: #ffffff8c }
+
+.footer-company-info h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #fff;
+  padding-bottom: 20px;
+}
+.footer-company-info .link a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+
+.all-right-reserved p a { color: #fff; }
+
+
+@media (min-width: 576px) {  }
+
+
+@media (min-width: 768px) {
+  .banner-wrapper { height: 420px; } 
+  .banner-txt { text-align: left; }
+
+  footer { text-align: left; }
+}
+
+
+
+@media (min-width: 992px) { 
+  .banner-wrapper { height: 540px; } 
+  .banner-txt { padding: 100px 0 0 }
+}
+
+
+@media (min-width: 1200px) {  
+  .banner-wrapper { height: 620px; } 
+  .banner-txt { padding: 100px 0 0 }
+  .banner-txt h1 {
+    font-size: 60px;
+    padding-bottom: 80px;
+  }
+
+  .about-txt-wrap h2 { font-size: 45px; }
+}
