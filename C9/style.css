@@ -1,5 +1,5 @@
   /*------------------------------------------------------------------
-  Project:    C9
+  Project:    AOTEROPH
   Last Change:  
   Develop By:  Raul Sevilles
   Author: PPS
@@ -15,7 +15,7 @@
   [ 1 Fonts ]
 -------------------------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 /*------------------------------------------------------------------
   [ 2 Global ]
 -------------------------------------------------------------------*/
@@ -36,11 +36,11 @@ html {
 }
 
 body {
-  background: #111111;
-  color: #fff;
-  font-family: 'Montserrat', sans-serif;
+  background: #fff;
+  color: #1D1D1D;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: normal;
   margin: 0;
 }
@@ -53,7 +53,7 @@ p, label, h1, h2, h3, h4, h5, h6 {
 
 h1, h2, h3, h4, h5, h6 {
     color: #070707;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 h2 { font-size: 22px; }
@@ -175,10 +175,22 @@ textarea {
   *zoom: 1;
 }
 
+/*Container Width*/
+/*.container {
+  margin: 0px auto;
+  max-width: 1440px;
+}
+*/
 /*------------------------------------------------------------------
   [ 3 Header ]
 -------------------------------------------------------------------*/
-.navbar { background: #000 }
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  padding: 10px 0;
+}
 .navbar-nav .nav-item { padding: 0 15px; }
 .navbar-nav .nav-link { 
   font-size: 16px;
@@ -190,71 +202,187 @@ textarea {
   [ 4 Banner ]
 -------------------------------------------------------------------*/
 .banner-wrapper {
-	background: url(../images/banner-bg.png) no-repeat 0 0;
+  background: #fff url(../images/banner-bg.png) no-repeat top center;
+  padding: 180px 0 20px;
+  background-size: cover;
 }
+.banner-img-wrap {
+  position: relative;
+}
+.banner-img-wrap img {
+  width: 100%;
+}
+
 .img-item { float: left }
+
 
 .banner-txt { 
   padding: 30px 0 50px 0px; 
   text-align: center;
 }
-.banner-txt h3 {
-  font-size: 16px;
-  color: #fff;
-  letter-spacing: 1.5px;
-  padding-bottom: 20px;
-}
 .banner-txt h1 {
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 600;
   color: #fff;
-  padding-bottom: 50px;
+}
+.banner-txt h3 {
+  font-size: 28px;
+  color: #fff;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+.banner-txt p {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 300;
 }
 
+a.btn-1 {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff2b1d+0,dc1306+100 */
+  background: rgb(255,43,29); /* Old browsers */
+  background: -moz-linear-gradient(45deg,  rgb(255,43,29) 0%, rgb(220,19,6) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg,  rgb(255,43,29) 0%,rgb(220,19,6) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg,  rgb(255,43,29) 0%,rgb(220,19,6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff2b1d', endColorstr='#dc1306',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 50px;
+  width: 100%;
+  padding:15px;
+  text-align: center;
+}
+a.btn-1:hover {
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ed1c1c+0,c10505+100 */
+background: rgb(237,28,28); /* Old browsers */
+background: -moz-linear-gradient(45deg,  rgb(237,28,28) 0%, rgb(193,5,5) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg,  rgb(237,28,28) 0%,rgb(193,5,5) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg,  rgb(237,28,28) 0%,rgb(193,5,5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed1c1c', endColorstr='#c10505',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+a.btn-2 {
+  border:2px solid #C9C9C9;
+  color: #CFCFCF;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 50px;
+  width: 100%;
+  padding:15px;
+  text-align: center;
+  margin-top: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+a.btn-2:hover {
+  border-color: #fff;
+  background: #fff;
+  color: #000;
+}
 /*------------------------------------------------------------------
   [ 5 Content ]
 -------------------------------------------------------------------*/
+.benefit-wrapper { padding: 40px 0 80px; }
+.benefit-wrapper h2,
+.easy-setup-wrapper h2,
+.contact-wrapper h2 {
+  color: #7CDC64;
+  font-size: 40px;
+  font-weight: 700;
+  padding-bottom: 20px;
+  text-align: center;
+}
 
+.benefit-wrapper p {
+  font-size: 16px;
+  color: #1D1D1D;
+  font-weight: 300;
+  text-align: center;
+}
+.benefit-wrapper p span { font-weight: 600; }
+
+.benefit-list { padding-top: 40px }
+.benefit-list h3 {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 20px 0 10px;
+}
+.benefit-list p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 26px;
+  padding: 0;
+}
+
+.benefit-item { 
+  padding-bottom: 30px; 
+  text-align: center;
+}
+.benefit-item img { width: 100%; }
+
+.easy-setup-wrapper {
+  background: #000;
+  padding: 80px 0;
+  color: #fff;
+  text-align: center;
+  border: solid;
+  border-image: linear-gradient(
+45deg, #db5af6, #ff7920) 1;
+    border-width: 7px 0 7px 0;
+}
+.easy-setup-wrapper #ply-btn {
+  background: url(../images/play-button.png) no-repeat center left;
+  padding: 5px 0 5px 40px;
+  color: #fff;
+  border:0;
+}
+.easy-setup-wrapper #ply-btn:hover {
+  color: #7CDC64;
+  text-decoration: underline;
+}
+.video-wrap {
+  padding: 20px 0 40px;
+}
 
 /*------------------------------------------------------------------
   [ 6 Footer ]
 -------------------------------------------------------------------*/
 footer {
   padding: 60px 0;
-  text-align: center;
 }
-footer .row div h4 {
-  color: #fff;
+#form1-wrapper h3 {
   font-size: 18px;
-  font-weight: 700;
-  padding: 20px 0;
+  color: #1D1D1D;
+  font-weight: 600;
 }
-footer .row div ul li { padding-bottom: 20px; }
-footer .row div ul li a { color: #fff; }
-footer .row div ul li a:hover { color: #ffffff8c }
-
-.footer-company-info h2 {
-  font-size: 26px;
-  font-weight: 700;
-  color: #fff;
-  padding-bottom: 20px;
+#form1-wrapper input[ type="text"],
+#form1-wrapper input[ type="email"] {
+  height: 50px;
 }
-.footer-company-info .link a {
-  color: #fff;
-  font-size: 18px;
-  font-weight: 700;
+#form1-wrapper button {
+  width: 100%;
+  background: #000;
+  border:0;
+  border-radius: 50px;
+  height: 50px;
+  font-weight: 600;
 }
 
-
-.all-right-reserved p a { color: #fff; }
-
+.form-dl-wrapper {
+  background: #63C14C;
+}
 
 @media (min-width: 576px) {  }
 
 
 @media (min-width: 768px) {
-  .banner-wrapper { height: 420px; } 
   .banner-txt { text-align: left; }
+
+  .benefit-item { text-align: left; }
+  .benefit-item p { text-align: left; }
 
   footer { text-align: left; }
 }
@@ -262,18 +390,49 @@ footer .row div ul li a:hover { color: #ffffff8c }
 
 
 @media (min-width: 992px) { 
-  .banner-wrapper { height: 540px; } 
-  .banner-txt { padding: 100px 0 0 }
+  .banner-wrapper { 
+    overflow: hidden; 
+    padding: 100px 0 50px;
+  }
+
+  .banner-img-wrap img {
+    width: 680px;
+    position: absolute;
+    top: 100px;
+    left: 20px;
+  }   
+
+  .banner-txt { padding: 100px 0 50px 0 }
 }
 
 
 @media (min-width: 1200px) {  
-  .banner-wrapper { height: 620px; } 
-  .banner-txt { padding: 100px 0 0 }
+
+
   .banner-txt h1 {
-    font-size: 60px;
-    padding-bottom: 80px;
+    font-size: 46px;
   }
 
   .about-txt-wrap h2 { font-size: 45px; }
 }
+
+
+@media (min-width: 1400px) {
+
+  .container { width: 1140px }
+
+   .banner-txt { padding: 160px 0 20px 0 }
+  .banner-wrapper { 
+    overflow: hidden; 
+    padding: 110px 0 175px;
+  }
+
+  .banner-img-wrap img {
+    width: inherit;
+    position: absolute;
+    top: 110px;
+    left: 50px;
+  }    
+
+}
+
